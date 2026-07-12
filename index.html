@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>廠房購置・處分 決策前期評估服務｜瑞禾開發 張現傑</title>
+<meta name="description" content="協助企業在購置或處分廠房前，完成選址、估價對標、稅務試算與法規風險的完整前期評估。以下為去識別化的實際案例展示。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#4B872F; --forest:#2B5937; --gold:#C0A434; --cream:#F5F3EE;
+  --text:#333; --text-light:#7a7f78; --border:#E4E1DA; --soft:#F7F6F2;
+  --font:"Noto Sans TC","Microsoft JhengHei",sans-serif;
+  --mono:"Inter",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--text);background:#EDEAE3;line-height:1.8;font-size:15px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;background:#fff}
+a{color:inherit}
+
+/* header */
+.hero{background:linear-gradient(150deg,var(--forest),#20422a);color:#fff;padding:34px 46px 40px;position:relative;overflow:hidden}
+.hero .wheat{position:absolute;top:-20px;right:30px;opacity:.5}
+.hero-top{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.logo-box{background:#fff;border-radius:11px;padding:8px 12px;box-shadow:0 3px 12px rgba(0,0,0,.22)}
+.logo-box img{height:74px;display:block}
+.hero-top .bt{font-size:13px;color:rgba(255,255,255,.7);letter-spacing:2px}
+.hero-top .bn{font-size:19px;font-weight:700;letter-spacing:1px;margin-top:2px}
+.eyebrow{font-size:12px;color:var(--gold);letter-spacing:5px;font-weight:700;text-transform:uppercase}
+.hero h1{font-size:33px;font-weight:900;letter-spacing:1px;margin:12px 0 14px;line-height:1.3}
+.hero h1 span{color:var(--gold)}
+.hero .lead{font-size:16px;color:rgba(255,255,255,.9);max-width:760px;line-height:1.9}
+.hero .kv{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16)}
+.hero .kv div{font-size:13.5px;color:rgba(255,255,255,.82)}
+.hero .kv b{color:var(--gold);font-weight:700}
+.gold-line{height:4px;background:var(--gold)}
+
+.content{padding:44px 46px 20px}
+.sec-eyebrow{font-size:11.5px;color:var(--gold);letter-spacing:4px;font-weight:700;text-transform:uppercase;margin-bottom:8px}
+.sec-title{font-size:24px;font-weight:800;color:var(--forest);margin-bottom:8px;letter-spacing:.5px}
+.sec-note{font-size:14.5px;color:var(--text-light);margin-bottom:26px;max-width:820px}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px}
+.pillar{background:var(--soft);border:1px solid var(--border);border-top:3px solid var(--green);border-radius:8px;padding:20px 18px}
+.pillar .ic{font-size:26px;margin-bottom:10px;display:block}
+.pillar h3{font-size:16px;color:var(--forest);font-weight:800;margin-bottom:7px}
+.pillar p{font-size:13px;color:#5c625a;line-height:1.75}
+
+/* cases */
+.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:8px}
+.case{border:1px solid var(--border);border-radius:11px;overflow:hidden;background:#fff;box-shadow:0 3px 14px rgba(43,89,55,.06);display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s;text-decoration:none;color:inherit}
+.case:hover{box-shadow:0 10px 30px rgba(43,89,55,.16);transform:translateY(-3px)}
+.case .band{background:linear-gradient(135deg,var(--forest),var(--green));color:#fff;padding:18px 22px;position:relative}
+.case .tag{display:inline-block;background:var(--gold);color:#3a3105;font-size:11.5px;font-weight:700;padding:3px 11px;border-radius:20px;letter-spacing:.5px;margin-bottom:10px}
+.case .band h3{font-size:20px;font-weight:800;letter-spacing:.5px;line-height:1.35}
+.case .band .sub{font-size:12.5px;color:rgba(255,255,255,.72);margin-top:5px;letter-spacing:1px}
+.case .body{padding:18px 22px 20px;flex:1;display:flex;flex-direction:column}
+.case .body p{font-size:13.5px;color:#54594f;line-height:1.8;margin-bottom:14px;flex:1}
+.case .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.case .chip{font-size:11.5px;background:var(--soft);border:1px solid var(--border);color:var(--forest);border-radius:5px;padding:3px 9px}
+.case .go{font-size:13.5px;font-weight:700;color:var(--green);display:flex;align-items:center;gap:6px}
+.case:hover .go{color:var(--gold)}
+.case .go .arr{transition:transform .18s}
+.case:hover .go .arr{transform:translateX(4px)}
+
+/* deid note */
+.deid{background:#FBF6E3;border:1px solid var(--gold);border-radius:9px;padding:18px 22px;margin:38px 0 8px;font-size:13.5px;color:#6f5a12;line-height:1.85}
+.deid b{color:var(--forest)}
+
+/* about */
+.about{background:var(--soft);border-top:3px solid var(--gold);margin-top:40px;padding:34px 46px}
+.about-grid{display:grid;grid-template-columns:240px 1fr;gap:26px;align-items:center}
+.pcard{background:var(--forest);color:#fff;border-radius:12px;padding:26px 20px;text-align:center}
+.pcard .av{width:74px;height:74px;border-radius:50%;background:var(--green);border:3px solid var(--gold);color:#fff;font-size:34px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.pcard .nm{font-size:20px;font-weight:800;letter-spacing:1px}
+.pcard .nm small{font-size:12.5px;color:var(--gold);font-weight:500;display:block;margin-top:3px}
+.pcard .ti{font-size:12px;color:rgba(255,255,255,.75);margin-top:8px;line-height:1.7}
+.pcard .lk{display:inline-block;margin-top:14px;background:var(--gold);color:#3a3105;font-weight:700;font-size:12.5px;padding:6px 15px;border-radius:18px;text-decoration:none}
+.pcard .lk:hover{background:#fff;color:var(--forest)}
+.about-info h3{font-size:19px;color:var(--forest);font-weight:800;margin-bottom:10px}
+.about-info p{font-size:14px;color:#54594f;line-height:1.85;margin-bottom:12px}
+.about-info .exp{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+.about-info .exp span{font-size:12.5px;background:#fff;border:1px solid var(--border);color:var(--forest);border-radius:18px;padding:4px 12px}
+.contact-row{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:16px;font-size:13.5px;color:var(--forest)}
+.contact-row b{color:var(--gold)}
+
+.footer{background:var(--forest);color:#fff;padding:26px 46px;font-size:12.5px}
+.footer .brand{font-size:14px;margin-bottom:8px}
+.footer .brand b{color:var(--gold)}
+.footer .disc{color:rgba(255,255,255,.6);font-size:12px;line-height:1.8;border-top:1px solid rgba(255,255,255,.15);padding-top:12px;margin-top:12px}
+
+@media(max-width:820px){
+  .hero,.content,.about,.footer{padding-left:20px;padding-right:20px}
+  .hero h1{font-size:25px}
+  .pillars{grid-template-columns:repeat(2,1fr)}
+  .cases{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
+  .pcard{max-width:280px;margin:0 auto}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <svg class="wheat" viewBox="0 0 40 100" width="40" height="100"><g fill="#C0A434" opacity="0.28"><ellipse cx="20" cy="10" rx="8" ry="12"/><ellipse cx="10" cy="28" rx="7" ry="10" transform="rotate(-18 10 28)"/><ellipse cx="30" cy="28" rx="7" ry="10" transform="rotate(18 30 28)"/><ellipse cx="8" cy="48" rx="6" ry="9" transform="rotate(-22 8 48)"/><ellipse cx="32" cy="48" rx="6" ry="9" transform="rotate(22 32 48)"/></g><line x1="20" y1="5" x2="20" y2="100" stroke="#C0A434" stroke-width="2" opacity="0.22"/></svg>
+    <div class="hero-top">
+      <div class="logo-box"><img src="logo-ruihe.png" alt="瑞禾開發"></div>
+      <div>
+        <div class="bt">RUEI HE ・ 工業不動產整合團隊</div>
+        <div class="bn">瑞禾開發 ｜ 睦聚地產開發</div>
+      </div>
+    </div>
+    <div class="eyebrow">Pre-transaction Advisory</div>
+    <h1>買廠房、賣廠房之前，<br>先把<span>該評估的</span>都評估清楚。</h1>
+    <div class="lead">
+      企業購置或處分廠房，動輒數億、影響十年。我協助企業在下決策之前，完成<b>選址、估價對標、稅務試算與法規風險</b>的完整前期評估——把「值不值得、買貴了沒、賣了實拿多少、有沒有地雷」講清楚，讓決策有依據。
+    </div>
+    <div class="kv">
+      <div>💼 <b>17+ 年</b>工業不動產實務</div>
+      <div>🏛️ 經濟部產業用地媒合專案團隊</div>
+      <div>📋 不動產經紀人 108 中市經紀字第 01847 號</div>
+    </div>
+  </div>
+  <div class="gold-line"></div>
+
+  <div class="content">
+
+    <!-- 服務面向 -->
+    <div class="sec-eyebrow">What I evaluate</div>
+    <div class="sec-title">四個面向，一份前期評估</div>
+    <div class="sec-note">每一件購置或處分案，我會依標的性質，組合以下四類評估，交付一份能直接支持決策的報告。</div>
+    <div class="pillars">
+      <div class="pillar"><span class="ic">📍</span><h3>選址評估</h3><p>用途定性、用地合法性、區位與物流半徑、供應鏈鄰近性，判斷「這裡適不適合」。</p></div>
+      <div class="pillar"><span class="ic">📊</span><h3>估價與對標</h3><p>實價登錄比對、鄰近與全台同類成交對標，判斷「開價合不合理、買貴了沒」。</p></div>
+      <div class="pillar"><span class="ic">🧾</span><h3>處分與稅務</h3><p>房地合一稅試算、成本認列、稅後淨額與實拿現金，判斷「賣掉真正拿多少」。</p></div>
+      <div class="pillar"><span class="ic">⚖️</span><h3>法規與風險</h3><p>使用分區、建蔽容積、保留空地、環保與污染紀錄，判斷「有沒有看不見的地雷」。</p></div>
+    </div>
+
+    <!-- 案例展示 -->
+    <div style="margin-top:44px">
+      <div class="sec-eyebrow">Case Studies · 去識別化展示</div>
+      <div class="sec-title">四個真實案例（已去識別化）</div>
+      <div class="sec-note">以下為實際承辦案件，已移除交易雙方與廠商的身分資訊、精確地址與可辨識影像，僅保留評估方法與分析結構，供參考我方的評估能力。點擊任一案例可展開完整報告。</div>
+
+      <div class="cases">
+
+        <a class="case" href="cases/hazmat/index.html">
+          <div class="band">
+            <span class="tag">選址 × 法規風險</span>
+            <h3>危化倉儲選址前期評估</h3>
+            <div class="sub">危險物品倉庫・購置前評估</div>
+          </div>
+          <div class="body">
+            <p>買方欲設置危險物品（I 類組）倉庫，我方就標的用地合法性、危險物品保留空地寬度、現使用者的環保裁罰與列管歷史、水文限制逐項評估，並提出三套替代選址方案比較與盡職調查建議。</p>
+            <div class="chips"><span class="chip">用地合法性</span><span class="chip">保留空地法規</span><span class="chip">環保風險</span><span class="chip">替代方案比較</span></div>
+            <div class="go">查看案例 <span class="arr">→</span></div>
+          </div>
+        </a>
+
+        <a class="case" href="cases/benchmark/index.html">
+          <div class="band">
+            <span class="tag">購置決策 × 對標</span>
+            <h3>整廠購置案・全台對標分析</h3>
+            <div class="sub">買方合理價格研判</div>
+          </div>
+          <div class="body">
+            <p>買方洽談一筆整廠標的，我方彙整鄰近乙工大坪數成交個案、全台同類整廠實價登錄對標，回推合理單價區間，並就多組競買、屋主意向與交通利多，提出購置進度說明與決策建議。</p>
+            <div class="chips"><span class="chip">實價登錄對標</span><span class="chip">鄰近成交個案</span><span class="chip">合理價研判</span><span class="chip">決策建議</span></div>
+            <div class="go">查看案例 <span class="arr">→</span></div>
+          </div>
+        </a>
+
+        <a class="case" href="cases/tax/index.html">
+          <div class="band">
+            <span class="tag">處分 × 稅務試算</span>
+            <h3>廠房處分・房地合一稅試算</h3>
+            <div class="sub">持有企業出售前試算</div>
+          </div>
+          <div class="body">
+            <p>持有企業評估出售名下工業區廠房，我方建置房地合一稅公式試算表，帶入取得成本、資本改良、移轉費用與貸款餘額，算出課稅所得、應納稅額、稅後淨額與實拿現金，並提醒憑證認列的關鍵差異。</p>
+            <div class="chips"><span class="chip">房地合一 2.0</span><span class="chip">成本認列</span><span class="chip">稅後淨額</span><span class="chip">實拿現金</span></div>
+            <div class="go">查看案例 <span class="arr">→</span></div>
+          </div>
+        </a>
+
+        <a class="case" href="cases/siting/index.html">
+          <div class="band">
+            <span class="tag">擴廠 × 選址建議</span>
+            <h3>企業擴廠選址建議書</h3>
+            <div class="sub">上市櫃法人・周邊 2,000 坪</div>
+          </div>
+          <div class="body">
+            <p>生技業委託方擬於現址周邊擴充 2,000 坪，我方從企業趨勢、產業供應鏈、實價登錄就近行情與工業用地法規切入，推薦選址區域、比較「買現成 vs 買地自建」兩種達標路徑，並精選具體推薦標的。</p>
+            <div class="chips"><span class="chip">供應鏈區位</span><span class="chip">實價行情</span><span class="chip">達標路徑試算</span><span class="chip">標的推薦</span></div>
+            <div class="go">查看案例 <span class="arr">→</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="deid">
+      🔒 <b>關於去識別化：</b>本頁所有案例均為實際承辦案件，為保護客戶與交易雙方，已移除公司名稱、統一編號、精確地址與地號、聯絡資訊等身分資料（以「A 公司／B 公司／委託方」等代稱表示），並對地籍圖、空照圖與現場照片進行遮蔽處理。公開之實價登錄比較個案與我方自身品牌資訊予以保留。展示目的僅在說明評估方法與服務能力。
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="about">
+    <div class="sec-eyebrow">Who I am</div>
+    <div class="sec-title" style="margin-bottom:22px">關於我</div>
+    <div class="about-grid">
+      <div class="pcard">
+        <div class="av">張</div>
+        <div class="nm">張現傑<small>Mac Chang</small></div>
+        <div class="ti">睦聚地產開發 負責人<br>瑞禾開發 工業地產部 業務總監</div>
+        <a class="lk" href="https://mac2good909777-commits.github.io/about-mac/" target="_blank" rel="noopener">🔗 個人介紹頁</a>
+      </div>
+      <div class="about-info">
+        <h3>專注中部・北部工業不動產的前期評估</h3>
+        <p>17 年以上工業不動產實務，完整歷練信義集團與磐石工業地產，服務對象涵蓋多家上市櫃法人的廠房選址與資產處分。我做的不只是「找物件」，而是在企業下手之前，把選址、價格、稅務與法規風險攤開講清楚，讓每一筆數億的決策都有依據。</p>
+        <div class="exp">
+          <span>工業不動產</span><span>企業設廠選址評估</span><span>購置估價對標</span><span>資產處分與稅務</span><span>土地開發可行性</span><span>都市計畫與使用變更</span>
+        </div>
+        <div class="contact-row">
+          <div>📱 <b>0953-909777</b></div>
+          <div>🏢 瑞禾開發 ｜ 睦聚地產開發</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="brand"><b>瑞禾開發</b>　建築、房產整合團隊　｜　工業地產部　張現傑</div>
+    <div class="disc">※ 本網站案例均經去識別化處理，內容之坪數、單價與試算係依公開資訊與實價登錄推估，僅供評估方法之展示參考，不構成要約或投資建議；實際交易條件、稅務計算應以現場查證、正式契約與稅務主管機關核定為準。</div>
+  </div>
+
+</div>
+</body>
+</html>
