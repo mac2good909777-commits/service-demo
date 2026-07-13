@@ -16,25 +16,25 @@
   --mono:"Inter","Roboto",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font);color:var(--text);background:#EDEAE3;line-height:1.8;font-size:15px;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font);color:var(--text);background:#EDEAE3;line-height:1.8;font-size:clamp(20px,1.2vw + 5px,22px);-webkit-font-smoothing:antialiased}
 .wrap{max-width:980px;margin:0 auto;background:#fff}
 .header{background:var(--forest);color:#fff;padding:28px 40px 0;position:relative;overflow:hidden}
 .header .wheat{position:absolute;top:-10px;right:24px}
 .header-top{display:flex;align-items:center;gap:16px}
 .logo-mark{width:62px;height:62px;background:var(--green);border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative}
-.logo-mark span{color:#fff;font-size:40px;font-weight:900;line-height:1}
+.logo-mark span{color:#fff;font-size:clamp(36px,1.2vw + 21px,46px);font-weight:900;line-height:1}
 .logo-mark::before,.logo-mark::after{content:"";position:absolute;width:2px;height:30px;background:var(--gold);opacity:.6;top:8px}
 .logo-mark::before{left:-7px}.logo-mark::after{right:-7px}
 .logo-box{background:#fff;border-radius:10px;padding:7px 10px;display:inline-flex;box-shadow:0 2px 8px rgba(0,0,0,.18)}
 .logo-box img{height:92px;display:block}
 @media(max-width:760px){.logo-box img{height:72px}}
-.brand-name{font-size:22px;font-weight:700;letter-spacing:2px}
-.brand-sub{font-size:12px;color:rgba(255,255,255,.75);letter-spacing:3px;margin-top:2px}
-.header h1{font-size:26px;font-weight:700;letter-spacing:1px;margin:22px 0 6px}
-.header .lead{font-size:14px;color:rgba(255,255,255,.82);margin-bottom:22px}
-.header .meta{font-size:12px;color:rgba(255,255,255,.6);border-top:1px solid rgba(255,255,255,.15);padding:10px 0;display:flex;flex-wrap:wrap;gap:6px 20px}
+.brand-name{font-size:clamp(20px,1.2vw + 5px,24px);font-weight:700;letter-spacing:2px}
+.brand-sub{font-size:clamp(20px,1.2vw + 5px,22px);color:rgba(255,255,255,.75);letter-spacing:3px;margin-top:2px}
+.header h1{font-size:clamp(24px,1.2vw + 9px,32px);font-weight:700;letter-spacing:1px;margin:22px 0 6px}
+.header .lead{font-size:clamp(20px,1.2vw + 5px,22px);color:rgba(255,255,255,.82);margin-bottom:22px}
+.header .meta{font-size:clamp(20px,1.2vw + 5px,22px);color:rgba(255,255,255,.6);border-top:1px solid rgba(255,255,255,.15);padding:10px 0;display:flex;flex-wrap:wrap;gap:6px 20px}
 .gold-line{height:3px;background:var(--gold)}
-.toc{background:#fff;border-top:1px solid var(--border);border-bottom:2px solid var(--green);padding:0 40px;font-size:12.5px;display:flex;flex-wrap:wrap;align-items:stretch;gap:0}
+.toc{background:#fff;border-top:1px solid var(--border);border-bottom:2px solid var(--green);padding:0 40px;font-size:clamp(20px,1.2vw + 5px,22px);display:flex;flex-wrap:wrap;align-items:stretch;gap:0}
 .toc a{color:var(--forest);text-decoration:none;font-weight:500;padding:9px 12px;white-space:nowrap;border-right:1px solid var(--border);display:flex;align-items:center}
 .toc a:first-child{padding-left:4px}
 .toc a:hover{color:var(--green);background:var(--soft)}
@@ -42,67 +42,67 @@ body{font-family:var(--font);color:var(--text);background:#EDEAE3;line-height:1.
 .toc a.toc-star:hover{background:var(--forest)}
 .content{padding:8px 40px 40px}
 section{margin-top:36px;scroll-margin-top:20px}
-.sec-title{font-size:21px;font-weight:700;color:var(--forest);border-left:4px solid var(--green);padding-left:14px;margin-bottom:6px}
-.sec-note{font-size:13px;color:var(--text-light);padding-left:18px;margin-bottom:18px}
-h3{font-size:17px;color:var(--green);font-weight:600;margin:22px 0 10px}
-h4{font-size:15px;color:var(--forest);font-weight:700;margin:16px 0 8px}
+.sec-title{font-size:clamp(20px,1.2vw + 5px,23px);font-weight:700;color:var(--forest);border-left:4px solid var(--green);padding-left:14px;margin-bottom:6px}
+.sec-note{font-size:clamp(20px,1.2vw + 5px,22px);color:var(--text-light);padding-left:18px;margin-bottom:18px}
+h3{font-size:clamp(20px,1.2vw + 5px,23px);color:var(--green);font-weight:600;margin:22px 0 10px}
+h4{font-size:clamp(20px,1.2vw + 5px,22px);color:var(--forest);font-weight:700;margin:16px 0 8px}
 p{margin:10px 0}
-.anchor-box{background:var(--cream);border-left:4px solid var(--gold);padding:16px 20px;margin:18px 0;font-size:14.5px}
+.anchor-box{background:var(--cream);border-left:4px solid var(--gold);padding:16px 20px;margin:18px 0;font-size:clamp(20px,1.2vw + 5px,22px)}
 .anchor-box b{color:var(--forest)}
 .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}
 .kpi{background:var(--soft);border:1px solid var(--border);border-radius:4px;padding:18px 14px;text-align:center}
-.kpi .num{font-family:var(--mono);font-size:28px;font-weight:700;color:var(--gold);line-height:1.1}
-.kpi .num small{font-size:14px}
-.kpi .lab{font-size:13px;color:#666;margin-top:6px}
-.kpi .up{color:var(--green);font-weight:600;font-size:12.5px}
-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.kpi .num{font-family:var(--mono);font-size:clamp(24px,1.2vw + 9px,34px);font-weight:700;color:var(--gold);line-height:1.1}
+.kpi .num small{font-size:clamp(20px,1.2vw + 5px,22px)}
+.kpi .lab{font-size:clamp(20px,1.2vw + 5px,22px);color:#666;margin-top:6px}
+.kpi .up{color:var(--green);font-weight:600;font-size:clamp(20px,1.2vw + 5px,22px)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:clamp(20px,1.2vw + 5px,22px)}
 th{background:var(--forest);color:#fff;padding:11px 12px;text-align:left;font-weight:500}
 td{padding:10px 12px;border:1px solid var(--border);vertical-align:top}
 tbody tr:nth-child(odd){background:var(--soft)}
 td.num,th.num{text-align:right;font-family:var(--mono)}
 .hl{color:var(--forest);font-weight:700}
 .up{color:var(--green);font-weight:700}.dn{color:var(--down);font-weight:700}
-a.sv{display:inline-block;font-size:11.5px;color:#fff;background:var(--green);border-radius:3px;padding:1px 7px;text-decoration:none;margin-left:5px;white-space:nowrap;vertical-align:middle}
+a.sv{display:inline-block;font-size:clamp(20px,1.2vw + 5px,22px);color:#fff;background:var(--green);border-radius:3px;padding:1px 7px;text-decoration:none;margin-left:5px;white-space:nowrap;vertical-align:middle}
 a.sv:hover{background:var(--gold)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
 .card{border:1px solid var(--border);border-radius:4px;padding:16px}
-.card .rank{font-size:12px;font-weight:700;color:#fff;background:var(--green);display:inline-block;padding:2px 10px;border-radius:3px;margin-bottom:8px}
+.card .rank{font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:#fff;background:var(--green);display:inline-block;padding:2px 10px;border-radius:3px;margin-bottom:8px}
 .card .rank.s2{background:var(--gold)}.card .rank.s3{background:var(--neutral)}
-.card h4{font-size:16px;color:var(--forest);margin:0 0 6px}
-.card .price{font-family:var(--mono);font-size:14px;color:var(--gold);font-weight:700;margin-top:8px}
-.card p{font-size:13px;color:#555;margin:4px 0}
-.chain{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:6px;margin:18px 0;font-size:13px}
+.card h4{font-size:clamp(20px,1.2vw + 5px,22px);color:var(--forest);margin:0 0 6px}
+.card .price{font-family:var(--mono);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--gold);font-weight:700;margin-top:8px}
+.card p{font-size:clamp(20px,1.2vw + 5px,22px);color:#555;margin:4px 0}
+.chain{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:6px;margin:18px 0;font-size:clamp(20px,1.2vw + 5px,22px)}
 .chain .node{border:1px solid var(--border);border-radius:4px;padding:14px;background:var(--soft)}
 .chain .node.core{background:var(--forest);color:#fff;border-color:var(--forest)}
-.chain .node h5{font-size:14px;margin-bottom:8px;color:var(--green)}
+.chain .node h5{font-size:clamp(20px,1.2vw + 5px,22px);margin-bottom:8px;color:var(--green)}
 .chain .node.core h5{color:var(--gold)}
-.chain .node ul{list-style:none;font-size:12.5px;line-height:1.9}
-.chain .arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:22px;font-weight:700}
-.callout{background:var(--cream);border-left:4px solid var(--gold);padding:14px 18px;margin:16px 0;font-size:14px}
+.chain .node ul{list-style:none;font-size:clamp(20px,1.2vw + 5px,22px);line-height:1.9}
+.chain .arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:clamp(20px,1.2vw + 5px,24px);font-weight:700}
+.callout{background:var(--cream);border-left:4px solid var(--gold);padding:14px 18px;margin:16px 0;font-size:clamp(20px,1.2vw + 5px,22px)}
 .callout b{color:var(--forest)}
 .path-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
 .path{border:1px solid var(--border);border-radius:4px;padding:18px}
-.path .tag{font-size:12px;font-weight:700;color:var(--green);letter-spacing:1px}
-.path h4{font-size:17px;color:var(--forest);margin:6px 0 10px}
-.path .big{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--gold);margin:10px 0}
-.path ul{margin:8px 0 0 18px;font-size:13.5px}
+.path .tag{font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--green);letter-spacing:1px}
+.path h4{font-size:clamp(20px,1.2vw + 5px,23px);color:var(--forest);margin:6px 0 10px}
+.path .big{font-family:var(--mono);font-size:clamp(20px,1.2vw + 5px,24px);font-weight:700;color:var(--gold);margin:10px 0}
+.path ul{margin:8px 0 0 18px;font-size:clamp(20px,1.2vw + 5px,22px)}
 .path li{margin:5px 0}
-.law{background:#FAFAF8;border:1px solid var(--border);border-left:3px solid var(--green);padding:14px 18px;margin:12px 0;font-size:13px;line-height:1.85}
-.law .src{font-size:12px;color:var(--text-light);margin-top:8px}
+.law{background:#FAFAF8;border:1px solid var(--border);border-left:3px solid var(--green);padding:14px 18px;margin:12px 0;font-size:clamp(20px,1.2vw + 5px,22px);line-height:1.85}
+.law .src{font-size:clamp(20px,1.2vw + 5px,22px);color:var(--text-light);margin-top:8px}
 .law .src a{color:var(--green)}
-.law pre{white-space:pre-wrap;font-family:var(--font);font-size:13px;color:#444;margin:6px 0}
+.law pre{white-space:pre-wrap;font-family:var(--font);font-size:clamp(20px,1.2vw + 5px,22px);color:#444;margin:6px 0}
 .appendix{background:var(--soft);margin-top:40px;padding:30px 40px;border-top:3px solid var(--gold)}
-.appendix .sec-title{font-size:20px}
-.footer{background:var(--forest);color:#fff;padding:24px 40px;font-size:12.5px}
-.footer .sources{color:rgba(255,255,255,.7);font-size:12px;margin-bottom:14px;line-height:1.9}
+.appendix .sec-title{font-size:clamp(20px,1.2vw + 5px,22px)}
+.footer{background:var(--forest);color:#fff;padding:24px 40px;font-size:clamp(20px,1.2vw + 5px,22px)}
+.footer .sources{color:rgba(255,255,255,.7);font-size:clamp(20px,1.2vw + 5px,22px);margin-bottom:14px;line-height:1.9}
 .footer .sources a{color:var(--gold);text-decoration:none}
 .footer .brand{border-top:1px solid rgba(255,255,255,.15);padding-top:12px;display:flex;flex-wrap:wrap;gap:4px 16px;color:rgba(255,255,255,.85)}
-.disc{font-size:11.5px;color:rgba(255,255,255,.5);margin-top:8px}
+.disc{font-size:clamp(20px,1.2vw + 5px,22px);color:rgba(255,255,255,.5);margin-top:8px}
 ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
 .prop{border:1px solid var(--border);border-radius:5px;overflow:hidden;margin:18px 0}
 .prop-head{background:var(--forest);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
-.prop-head h4{color:#fff;margin:0;font-size:16px}
-.prop-head .tg{font-size:11.5px;background:var(--gold);color:#fff;padding:2px 9px;border-radius:3px;font-weight:700}
+.prop-head h4{color:#fff;margin:0;font-size:clamp(20px,1.2vw + 5px,22px)}
+.prop-head .tg{font-size:clamp(20px,1.2vw + 5px,22px);background:var(--gold);color:#fff;padding:2px 9px;border-radius:3px;font-weight:700}
 .prop-body{padding:16px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:6px;margin:0 0 14px}
 .gallery a{display:block}
@@ -111,85 +111,85 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
 .gallery.single img{height:240px;object-fit:cover}
 .spec{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
 .spec .b{background:var(--soft);border:1px solid var(--border);border-radius:4px;padding:10px;text-align:center}
-.spec .b .v{font-family:var(--mono);font-size:17px;font-weight:700;color:var(--gold)}
-.spec .b .v small{font-size:12px}
-.spec .b .k{font-size:12px;color:#666;margin-top:2px}
-.feat{font-size:13.5px;background:var(--cream);border-left:3px solid var(--gold);padding:10px 14px;margin:10px 0}
-.fit{font-size:13.5px;background:#F0F5EC;border-left:3px solid var(--green);padding:10px 14px;margin:10px 0}
+.spec .b .v{font-family:var(--mono);font-size:clamp(20px,1.2vw + 5px,23px);font-weight:700;color:var(--gold)}
+.spec .b .v small{font-size:clamp(20px,1.2vw + 5px,22px)}
+.spec .b .k{font-size:clamp(20px,1.2vw + 5px,22px);color:#666;margin-top:2px}
+.feat{font-size:clamp(20px,1.2vw + 5px,22px);background:var(--cream);border-left:3px solid var(--gold);padding:10px 14px;margin:10px 0}
+.fit{font-size:clamp(20px,1.2vw + 5px,22px);background:#F0F5EC;border-left:3px solid var(--green);padding:10px 14px;margin:10px 0}
 .fit b{color:var(--forest)}
-.prop .links{font-size:13px;margin-top:12px}
+.prop .links{font-size:clamp(20px,1.2vw + 5px,22px);margin-top:12px}
 .prop .links a{color:#fff;background:var(--green);border-radius:3px;padding:3px 10px;margin-right:10px;text-decoration:none;font-weight:500;display:inline-block;margin-bottom:6px}
 .prop .links a.alt{background:#fff;color:var(--green);border:1px solid var(--green)}
 .routemap{width:100%;border:1px solid var(--border);border-radius:4px;margin-bottom:12px;display:block}
 .gallery img{cursor:pointer}
 #lb{display:none;position:fixed;inset:0;background:rgba(18,24,18,.93);z-index:9999;align-items:center;justify-content:center}
 #lb img{max-width:90vw;max-height:82vh;border-radius:4px;box-shadow:0 6px 40px rgba(0,0,0,.55)}
-.lbbtn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.16);color:#fff;border:none;font-size:30px;width:56px;height:56px;border-radius:50%;cursor:pointer;user-select:none;line-height:1}
+.lbbtn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.16);color:#fff;border:none;font-size:clamp(26px,1.2vw + 11px,36px);width:56px;height:56px;border-radius:50%;cursor:pointer;user-select:none;line-height:1}
 .lbbtn:hover{background:var(--gold)}
 #lbprev{left:18px}#lbnext{right:18px}
-#lbclose{position:absolute;top:16px;right:22px;background:none;border:none;color:#fff;font-size:38px;cursor:pointer;line-height:1}
-#lbcap{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#fff;font-size:14px;letter-spacing:1px}
+#lbclose{position:absolute;top:16px;right:22px;background:none;border:none;color:#fff;font-size:clamp(34px,1.2vw + 19px,44px);cursor:pointer;line-height:1}
+#lbcap{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:#fff;font-size:clamp(20px,1.2vw + 5px,22px);letter-spacing:1px}
 .sec-banner{background:var(--forest);margin:36px -40px 0;padding:26px 40px 24px;border-top:4px solid var(--gold);border-bottom:4px solid var(--gold)}
 /* ── PART 1 認識瑞禾 ── */
 .abt-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 20px;box-shadow:0 3px 12px rgba(43,89,55,.07)}
-.abt-card h4{color:var(--forest);font-size:14.5px;margin:0 0 7px;display:flex;align-items:center;gap:8px;font-weight:700}
-.abt-card p{color:#555;font-size:13px;line-height:1.75;margin:0}
+.abt-card h4{color:var(--forest);font-size:clamp(20px,1.2vw + 5px,22px);margin:0 0 7px;display:flex;align-items:center;gap:8px;font-weight:700}
+.abt-card p{color:#555;font-size:clamp(20px,1.2vw + 5px,22px);line-height:1.75;margin:0}
 .abt-g2{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin:13px 0}
 .abt-g3{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:13px 0}
-.numc{display:inline-flex;align-items:center;justify-content:center;min-width:25px;height:25px;border-radius:50%;background:var(--forest);color:var(--gold);font-weight:700;font-size:12px;border:2px solid var(--gold);flex-shrink:0}
-.pill{background:var(--soft);border:1px solid var(--border);border-radius:20px;padding:3px 10px;font-size:12px;color:var(--forest);display:inline-block}
+.numc{display:inline-flex;align-items:center;justify-content:center;min-width:25px;height:25px;border-radius:50%;background:var(--forest);color:var(--gold);font-weight:700;font-size:clamp(20px,1.2vw + 5px,22px);border:2px solid var(--gold);flex-shrink:0}
+.pill{background:var(--soft);border:1px solid var(--border);border-radius:20px;padding:3px 10px;font-size:clamp(20px,1.2vw + 5px,22px);color:var(--forest);display:inline-block}
 .pill-bar{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 0}
-.abt-subh{font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin:18px 0 6px;display:block}
+.abt-subh{font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin:18px 0 6px;display:block}
 .gov-hero{background:var(--forest);border-radius:12px;padding:22px 26px 26px;border:2px solid var(--gold);margin:13px 0}
-.gov-hero h4{color:#fff;font-size:17px;margin-bottom:8px}
-.gov-hero>p{color:rgba(255,255,255,.82);font-size:13.5px;margin-bottom:14px}
+.gov-hero h4{color:#fff;font-size:clamp(20px,1.2vw + 5px,23px);margin-bottom:8px}
+.gov-hero>p{color:rgba(255,255,255,.82);font-size:clamp(20px,1.2vw + 5px,22px);margin-bottom:14px}
 .gov-hero>p b{color:var(--gold)}
 .gov-body{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:start}
 .wstat{background:rgba(255,255,255,.1);border:1px solid rgba(192,164,52,.4);border-radius:10px;padding:13px 8px;text-align:center}
-.wstat b{display:block;font-size:24px;color:var(--gold);line-height:1.1}
-.wstat span{font-size:11px;color:rgba(255,255,255,.72);display:block;margin-top:4px;line-height:1.4}
+.wstat b{display:block;font-size:clamp(24px,1.2vw + 9px,30px);color:var(--gold);line-height:1.1}
+.wstat span{font-size:clamp(20px,1.2vw + 5px,22px);color:rgba(255,255,255,.72);display:block;margin-top:4px;line-height:1.4}
 .wstat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .browser-w{border-radius:9px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.30);text-decoration:none;display:block;margin-bottom:12px}
 .browser-bar{display:flex;align-items:center;gap:5px;background:#eef0ec;padding:7px 11px}
 .bdot{width:9px;height:9px;border-radius:50%}
 .bdot.r{background:#ec6a5e}.bdot.y{background:#f4be4f}.bdot.g{background:#61c454}
-.burl{margin-left:7px;background:#fff;color:#5a6b5e;font-size:11.5px;padding:2px 10px;border-radius:10px;flex:1}
+.burl{margin-left:7px;background:#fff;color:#5a6b5e;font-size:clamp(20px,1.2vw + 5px,22px);padding:2px 10px;border-radius:10px;flex:1}
 .browser-screen{background:linear-gradient(120deg,#f7f3e9,#fff);padding:16px;display:flex;flex-direction:column;gap:3px}
-.bs-ey{color:var(--gold);font-size:10px;letter-spacing:4px;font-weight:700}
-.bs-ti{color:var(--forest);font-size:15px;font-weight:800}
-.bs-ct{color:var(--green);font-size:12.5px;font-weight:700;margin-top:5px;border-bottom:2px solid var(--gold);align-self:flex-start;padding-bottom:1px}
+.bs-ey{color:var(--gold);font-size:clamp(20px,1.2vw + 5px,22px);letter-spacing:4px;font-weight:700}
+.bs-ti{color:var(--forest);font-size:clamp(20px,1.2vw + 5px,22px);font-weight:800}
+.bs-ct{color:var(--green);font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;margin-top:5px;border-bottom:2px solid var(--gold);align-self:flex-start;padding-bottom:1px}
 .dark-pill{background:rgba(255,255,255,.10);border:1px solid rgba(192,164,52,.4);color:#e9eee9}
 .profile-box{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:220px 1fr;margin:13px 0}
 .prof-side{background:var(--forest);color:#fff;padding:24px 18px;text-align:center}
-.avatar{width:78px;height:78px;border-radius:50%;background:var(--green);color:#fff;font-size:36px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;border:3px solid var(--gold)}
-.pname{font-size:19px;font-weight:800;letter-spacing:1px}
-.pname small{font-size:12.5px;color:var(--gold);font-weight:500}
-.ptitle{color:rgba(255,255,255,.75);font-size:12px;margin-top:3px}
-.pslogan{color:var(--gold);font-size:12px;line-height:1.7;margin:11px 0 4px;padding-top:11px;border-top:1px solid rgba(255,255,255,.15)}
-.abt-link{display:inline-block;background:var(--gold);color:#fff;padding:6px 14px;border-radius:18px;text-decoration:none;font-weight:700;font-size:12.5px;margin-top:9px}
+.avatar{width:78px;height:78px;border-radius:50%;background:var(--green);color:#fff;font-size:clamp(32px,1.2vw + 17px,42px);font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;border:3px solid var(--gold)}
+.pname{font-size:clamp(20px,1.2vw + 5px,26px);font-weight:800;letter-spacing:1px}
+.pname small{font-size:clamp(20px,1.2vw + 5px,22px);color:var(--gold);font-weight:500}
+.ptitle{color:rgba(255,255,255,.75);font-size:clamp(20px,1.2vw + 5px,22px);margin-top:3px}
+.pslogan{color:var(--gold);font-size:clamp(20px,1.2vw + 5px,22px);line-height:1.7;margin:11px 0 4px;padding-top:11px;border-top:1px solid rgba(255,255,255,.15)}
+.abt-link{display:inline-block;background:var(--gold);color:#fff;padding:6px 14px;border-radius:18px;text-decoration:none;font-weight:700;font-size:clamp(20px,1.2vw + 5px,22px);margin-top:9px}
 .abt-link:hover{background:#fff;color:var(--forest)}
 .prof-main{padding:20px 24px;display:flex;flex-direction:column;gap:14px}
-.plabel{display:block;color:var(--gold);font-size:10px;letter-spacing:3px;font-weight:700;margin-bottom:5px}
-.pblock ul{margin-left:15px;color:#555;font-size:13px}
+.plabel{display:block;color:var(--gold);font-size:clamp(20px,1.2vw + 5px,22px);letter-spacing:3px;font-weight:700;margin-bottom:5px}
+.pblock ul{margin-left:15px;color:#555;font-size:clamp(20px,1.2vw + 5px,22px)}
 .pblock li{margin-bottom:4px}
 @media(max-width:760px){
   .sec-banner{margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}
-  .toc a{font-size:11.5px;padding:7px 8px}
+  .toc a{font-size:clamp(20px,1.2vw + 5px,22px);padding:7px 8px}
   .spec{grid-template-columns:repeat(2,1fr)}
   .gallery{grid-template-columns:repeat(3,1fr)}
   .gallery.single img{height:180px}
   .content,.header,.appendix,.toc{padding-left:16px;padding-right:16px}
   .kpi-row{grid-template-columns:repeat(2,1fr)}
-  .kpi .num{font-size:22px}
+  .kpi .num{font-size:clamp(20px,1.2vw + 5px,24px)}
   .cards{grid-template-columns:1fr}
   .chain{grid-template-columns:1fr}.chain .arrow{transform:rotate(90deg);padding:2px 0}
   .path-grid{grid-template-columns:1fr}
-  table{font-size:12px;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{font-size:clamp(20px,1.2vw + 5px,22px);display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
   td,th{padding:8px 7px}
-  .header h1{font-size:19px;margin:16px 0 4px}
-  .sec-title{font-size:18px}
+  .header h1{font-size:clamp(20px,1.2vw + 5px,26px);margin:16px 0 4px}
+  .sec-title{font-size:clamp(20px,1.2vw + 5px,24px)}
   .prop-head{flex-direction:column;gap:4px;align-items:flex-start}
-  .lbbtn{width:44px;height:44px;font-size:24px}
+  .lbbtn{width:44px;height:44px;font-size:clamp(24px,1.2vw + 9px,30px)}
 }
 @media print{
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
@@ -215,6 +215,10 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
   .chain .arrow{transform:none}
   table{font-size:11pt;display:table;overflow:visible}
 }
+/* __FONTFIX_SAFETY__ */
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+img,svg{max-width:100%;height:auto}
+*{overflow-wrap:break-word;word-break:break-word}
 </style>
 </head>
 <body>
@@ -349,7 +353,7 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
       <div class="sec-note">近兩年新莊／五股／泰山<b>工業用地</b>單筆大坪數成交，作為購置標的選項基準（僅比工業地、住宅區已排除；門牌均附使用分區與 Google 街景連結）</div>
 
       <h3>A. 找「現成大廠房／廠辦」可參考（建物量體大）</h3>
-      <p style="font-size:12.5px;color:#888">下表土地單價＝總價÷土地坪，含建物價值，故廠辦類偏高（樓多地小）。</p>
+      <p style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888">下表土地單價＝總價÷土地坪，含建物價值，故廠辦類偏高（樓多地小）。</p>
       <table>
         <thead><tr><th>區</th><th>地址</th><th>使用分區</th><th class="num">土地坪</th><th class="num">建物坪</th><th>交易</th><th class="num">總價</th><th class="num">土地單價<br>萬/地坪</th><th>建物<br>屋齡·結構·建地比</th></tr></thead>
         <tbody>
@@ -361,19 +365,19 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
           <tr><td>五股</td><td>五權二路 25 號 </td><td>工業區·丁建</td><td class="num">212</td><td class="num">618</td><td>2025/01</td><td class="num">2.40 億</td><td class="num">113.4</td><td>33年·RC·2.92</td></tr>
         </tbody>
       </table>
-      <p style="font-size:13px;color:#888">單一成交達 2,000 坪建物者罕見。<b>達標策略：</b>①購整棟廠辦（900–1,300 坪）＋相鄰整併；或 ②鎖定下方大基地自建。</p>
+      <p style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888">單一成交達 2,000 坪建物者罕見。<b>達標策略：</b>①購整棟廠辦（900–1,300 坪）＋相鄰整併；或 ②鎖定下方大基地自建。</p>
 
       <h3>B. 目標區域「找地自建」行情說明</h3>
-      <div class="callout" style="font-size:13.5px">
+      <div class="callout" style="font-size:clamp(20px,1.2vw + 5px,22px)">
         <b>目標區域（五股・三重・新莊核心）800 坪以上大基地工業地</b>，近兩年實價登錄成交案例極少——此類標的原持有人多以長期收租為主，主動求售者稀缺，市場以開價為主要參考依據。<br><br>
         現可直接對照的標的：
-        <ul style="margin:8px 0 0 18px;font-size:13px">
+        <ul style="margin:8px 0 0 18px;font-size:clamp(20px,1.2vw + 5px,22px)">
           <li><b>三重某乙種工業區地</b>（乙種工業區·957 坪·可建 2,009 坪）：開價 <b>90 萬/地坪</b>，即本次自建方案推薦選地，總地價約 <b>8.6 億</b></li>
           <li>周邊小基地含建物成交（供建地比對照）：（委託方現址·門牌略） 113 萬、五權三路 4 號 68 萬——因含建物價值，<b>非純地價</b></li>
         </ul>
-        <div style="margin-top:8px;font-size:12px;color:#666">大基地純地價通常低於含建物小基地單價；三重某乙工地開價 90 萬，實際成交有議價空間。</div>
+        <div style="margin-top:8px;font-size:clamp(20px,1.2vw + 5px,22px);color:#666">大基地純地價通常低於含建物小基地單價；三重某乙工地開價 90 萬，實際成交有議價空間。</div>
       </div>
-      <div class="callout" style="font-size:13px">
+      <div class="callout" style="font-size:clamp(20px,1.2vw + 5px,22px)">
         <b>如何讀「建物：屋齡·結構·建地比」：</b>結構 RC＝鋼筋混凝土、SC（鋼骨）、SRC＝鋼骨鋼筋混凝土（最高等級）。<b>建地比＝建物坪÷土地坪，數值越高代表建物貢獻越大</b>，土地單價中含越多「建物價值」而非純地價。<br>
         以上表 A 為例：<b>建國一路 308 號 建地比 5.44（4 年新大樓）→ 土地單價 219 萬</b>；反之 <b>（委託方現址·門牌略）（委託方現址）建地比 2.97（29 年 SRC）→ 土地單價 113 萬</b>。買地自建應鎖定低建地比、老屋大基地，避開建物貢獻高、拆除代價大的標的。
       </div>
@@ -382,9 +386,9 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
     <!-- 推薦物件 -->
     <section id="sref" style="margin-top:0">
       <div class="sec-banner">
-        <div style="font-size:11px;color:var(--gold);letter-spacing:4px;font-weight:700;margin-bottom:8px">本次精選推薦</div>
-        <div style="font-size:28px;font-weight:900;color:#fff;letter-spacing:1px;line-height:1.2">推薦物件</div>
-        <div style="margin-top:12px;font-size:14px;color:rgba(255,255,255,.88);line-height:1.75">以下三件是我們為委託企業精選的推薦物件，符合 2,000 坪目標，建議安排實地察看</div>
+        <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--gold);letter-spacing:4px;font-weight:700;margin-bottom:8px">本次精選推薦</div>
+        <div style="font-size:clamp(24px,1.2vw + 9px,34px);font-weight:900;color:#fff;letter-spacing:1px;line-height:1.2">推薦物件</div>
+        <div style="margin-top:12px;font-size:clamp(20px,1.2vw + 5px,22px);color:rgba(255,255,255,.88);line-height:1.75">以下三件是我們為委託企業精選的推薦物件，符合 2,000 坪目標，建議安排實地察看</div>
       </div>
 
       <!-- 物件1 -->
@@ -491,17 +495,17 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
       <div class="path-grid">
         <div class="path">
           <div class="tag">方案一：找地自建</div>
-          <p style="font-size:13.5px">彈性最高、契合 GMP／潔淨室規劃</p>
+          <p style="font-size:clamp(20px,1.2vw + 5px,22px)">彈性最高、契合 GMP／潔淨室規劃</p>
           <div class="big">總投資 ≈ 11.8–12.6 億</div>
 
-          <div style="margin:14px 0 5px;font-size:12px;font-weight:700;color:var(--green);letter-spacing:1px">▸ 優勢</div>
+          <div style="margin:14px 0 5px;font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--green);letter-spacing:1px">▸ 優勢</div>
           <ul>
             <li>完全符合委託企業需求規劃——GMP 潔淨室、動線、各樓層機能均可自由設計</li>
             <li><b>自有資產、永久使用</b>，可抵押融資、分期建置</li>
             <li>長期持有攤提後，資產價值優於長期租賃</li>
           </ul>
 
-          <div style="margin:12px 0 5px;font-size:12px;font-weight:700;color:var(--forest);letter-spacing:1px">▸ 成本與等待</div>
+          <div style="margin:12px 0 5px;font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--forest);letter-spacing:1px">▸ 成本與等待</div>
           <ul>
             <li>規劃・建照・營造興建：<b>約 3–4 年等待期</b>，過程中持續有管理與過渡成本</li>
             <li>土地款早期大額投入，完工前資金積壓</li>
@@ -509,7 +513,7 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
             <li>GMP 潔淨廠另需設備驗證與取證時程</li>
           </ul>
 
-          <div style="margin:12px 0 5px;font-size:12px;font-weight:700;color:var(--text-light);letter-spacing:1px">▸ 費用試算（以推薦案三重某乙工地）</div>
+          <div style="margin:12px 0 5px;font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--text-light);letter-spacing:1px">▸ 費用試算（以推薦案三重某乙工地）</div>
           <ul>
             <li>土地：957 坪 × 開價 90 萬/地坪（乙種工業區·可建 2,009 坪）≈ <b>8.6 億</b></li>
             <li>營建：2,000 坪 × 16–20 萬 ≈ <b>3.2–4.0 億</b></li>
@@ -517,7 +521,7 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
         </div>
         <div class="path">
           <div class="tag">方案二：購置現成廠房</div>
-          <p style="font-size:13.5px">最快進駐、省去建照時程</p>
+          <p style="font-size:clamp(20px,1.2vw + 5px,22px)">最快進駐、省去建照時程</p>
           <div class="big">開價 16.8 億（議價後確認）</div>
           <ul>
             <li>以 <b>① 現成廠辦案</b> 評估：2,309 建坪（B1–4F）、緊鄰委託方現址，可整棟一次到位</li>
@@ -558,7 +562,7 @@ ul.clean{margin:10px 0 10px 20px}ul.clean li{margin:6px 0}
         <tr><td>乙種建築用地（非都市）</td><td>非都市土地使用管制規則 §9</td><td>一般建築使用</td><td class="num">60%</td><td class="num">240%</td></tr>
       </tbody>
     </table>
-    <p style="font-size:12.5px;color:#888">※ 「甲種/乙種工業區」屬<b>都市計畫</b>分區（依污染容忍度與開發強度分級）；「甲/乙/丙/丁種<b>建築用地</b>」屬<b>非都市土地</b>編定，兩套系統不同。委託方現址（委託方現址·門牌略）在實價資料中編定為「工業區·丁種建築用地」，採容積 300% 反推自建基地需求。各個別都市計畫得另訂數值，實際以地方主管機關核定為準。</p>
+    <p style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888">※ 「甲種/乙種工業區」屬<b>都市計畫</b>分區（依污染容忍度與開發強度分級）；「甲/乙/丙/丁種<b>建築用地</b>」屬<b>非都市土地</b>編定，兩套系統不同。委託方現址（委託方現址·門牌略）在實價資料中編定為「工業區·丁種建築用地」，採容積 300% 反推自建基地需求。各個別都市計畫得另訂數值，實際以地方主管機關核定為準。</p>
 
     <h3>附錄 B｜法規條文摘錄</h3>
     <div class="law">

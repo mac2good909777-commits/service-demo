@@ -83,10 +83,10 @@ body {
 }
 
 .brand-text { line-height: 1.4; }
-.brand-name { font-size: 20px; font-weight: 600; letter-spacing: 1px; }
-.brand-tagline { font-size: 13px; color: rgba(255,255,255,0.75); letter-spacing: 0.5px; }
+.brand-name { font-size:clamp(20px,1.2vw + 5px,22px); font-weight: 600; letter-spacing: 1px; }
+.brand-tagline { font-size:clamp(20px,1.2vw + 5px,22px); color: rgba(255,255,255,0.75); letter-spacing: 0.5px; }
 
-.header-meta { text-align: right; font-size: 13px; color: rgba(255,255,255,0.85); }
+.header-meta { text-align: right; font-size:clamp(20px,1.2vw + 5px,22px); color: rgba(255,255,255,0.85); }
 .header-meta strong { color: var(--ruihe-gold); font-weight: 600; }
 
 .header-title {
@@ -95,7 +95,7 @@ body {
 
 .eyebrow {
   display: inline-block;
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   letter-spacing: 3px;
   color: var(--ruihe-gold);
   font-weight: 500;
@@ -104,7 +104,7 @@ body {
 }
 
 .header-title h1 {
-  font-size: 38px;
+  font-size:clamp(34px,1.2vw + 19px,44px);
   font-weight: 700;
   letter-spacing: 2px;
   color: white;
@@ -112,7 +112,7 @@ body {
 }
 
 .header-title .subtitle {
-  font-size: 17px;
+  font-size:clamp(20px,1.2vw + 5px,23px);
   color: rgba(255,255,255,0.85);
   font-weight: 400;
   letter-spacing: 1px;
@@ -122,13 +122,13 @@ body {
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid rgba(192, 164, 52, 0.3);
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: rgba(255,255,255,0.8);
 }
 
 .header-title .recipient strong {
   color: white;
-  font-size: 18px;
+  font-size:clamp(20px,1.2vw + 5px,24px);
   font-weight: 600;
   margin-left: 8px;
   letter-spacing: 1px;
@@ -159,7 +159,7 @@ body {
 }
 
 .progress-label {
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text-light);
   white-space: nowrap;
 }
@@ -181,14 +181,14 @@ body {
 }
 
 .progress-text {
-  font-size: 15px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   font-weight: 600;
   color: var(--ruihe-forest);
   font-family: 'Inter', sans-serif;
   white-space: nowrap;
 }
 
-.progress-text .pct { font-size: 22px; color: var(--ruihe-green); }
+.progress-text .pct { font-size:clamp(20px,1.2vw + 5px,24px); color: var(--ruihe-green); }
 
 .toolbar {
   display: flex;
@@ -200,7 +200,7 @@ body {
   border: 1px solid var(--ruihe-border);
   background: white;
   color: var(--ruihe-text);
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
@@ -228,7 +228,7 @@ body {
   border-color: var(--ruihe-forest);
 }
 
-.btn-icon { font-size: 14px; }
+.btn-icon { font-size:clamp(20px,1.2vw + 5px,22px); }
 
 /* ===== Page nav ===== */
 .site-nav-bar { background: var(--ruihe-forest); }
@@ -236,7 +236,7 @@ body {
 .site-nav a {
   padding: 9px 16px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   font-weight: 600;
   letter-spacing: 0.5px;
   color: rgba(255,255,255,0.85);
@@ -269,7 +269,7 @@ main { padding: 48px 0 80px; }
   border-left: 4px solid var(--ruihe-green);
   padding: 32px 40px;
   margin-bottom: 40px;
-  font-size: 15px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   line-height: 2;
   color: var(--ruihe-text);
   box-shadow: var(--ruihe-shadow);
@@ -315,19 +315,19 @@ main { padding: 48px 0 80px; }
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 18px;
+  font-size:clamp(20px,1.2vw + 5px,24px);
   font-family: 'Inter', sans-serif;
   flex-shrink: 0;
 }
 
 .section-title {
-  font-size: 22px;
+  font-size:clamp(20px,1.2vw + 5px,24px);
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 .section-subtitle {
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: rgba(255,255,255,0.75);
   margin-top: 2px;
   letter-spacing: 0.5px;
@@ -335,7 +335,7 @@ main { padding: 48px 0 80px; }
 
 .section-body { padding: 32px; }
 .section-intro {
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text-light);
   margin-bottom: 24px;
   line-height: 1.9;
@@ -363,20 +363,20 @@ main { padding: 48px 0 80px; }
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   font-family: 'Inter', sans-serif;
   flex-shrink: 0;
 }
 
 .block-title {
-  font-size: 17px;
+  font-size:clamp(20px,1.2vw + 5px,23px);
   font-weight: 600;
   color: var(--ruihe-forest);
   flex: 1;
 }
 
 .block-count {
-  font-size: 12px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text-muted);
   font-family: 'Inter', sans-serif;
 }
@@ -452,7 +452,7 @@ main { padding: 48px 0 80px; }
 .check-content { flex: 1; min-width: 0; }
 
 .check-title {
-  font-size: 15px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   font-weight: 500;
   color: var(--ruihe-text);
   line-height: 1.6;
@@ -462,7 +462,7 @@ main { padding: 48px 0 80px; }
 .check-item.checked .check-title { color: var(--ruihe-forest); }
 
 .check-detail {
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text-muted);
   line-height: 1.7;
 }
@@ -478,7 +478,7 @@ main { padding: 48px 0 80px; }
   background: transparent;
   border: 1px solid var(--ruihe-border);
   color: var(--ruihe-text-light);
-  font-size: 12px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   padding: 4px 10px;
   border-radius: 12px;
   cursor: pointer;
@@ -517,7 +517,7 @@ main { padding: 48px 0 80px; }
   border: 1px solid var(--ruihe-border);
   border-radius: 4px;
   font-family: inherit;
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text);
   line-height: 1.7;
   resize: vertical;
@@ -533,7 +533,7 @@ main { padding: 48px 0 80px; }
 }
 
 .note-area .note-hint {
-  font-size: 12px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text-muted);
   margin-top: 6px;
 }
@@ -545,7 +545,7 @@ table.data-table {
   width: 100%;
   border-collapse: collapse;
   margin: 16px 0;
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
 }
 
 table.data-table th {
@@ -554,7 +554,7 @@ table.data-table th {
   padding: 12px 16px;
   text-align: left;
   font-weight: 500;
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   letter-spacing: 0.5px;
 }
 
@@ -618,7 +618,7 @@ table.data-table td.label {
   color: white;
   padding: 4px 12px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   font-weight: 600;
   letter-spacing: 0.5px;
   font-family: 'Inter', sans-serif;
@@ -627,19 +627,19 @@ table.data-table td.label {
 .plan-card.recommended .plan-badge { background: var(--ruihe-gold); color: var(--ruihe-forest); }
 
 .plan-title {
-  font-size: 17px;
+  font-size:clamp(20px,1.2vw + 5px,23px);
   font-weight: 600;
   color: var(--ruihe-forest);
 }
 
 .plan-stars {
   color: var(--ruihe-gold);
-  font-size: 16px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   letter-spacing: 2px;
 }
 
 .plan-desc {
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text-light);
   line-height: 1.8;
   margin-bottom: 12px;
@@ -648,7 +648,7 @@ table.data-table td.label {
 .plan-meta {
   display: flex;
   gap: 24px;
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: var(--ruihe-text-light);
   border-top: 1px solid var(--ruihe-border-light);
   padding-top: 12px;
@@ -664,7 +664,7 @@ table.data-table td.label {
   padding: 16px 20px;
   border-radius: 0 4px 4px 0;
   margin: 16px 0;
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   line-height: 1.9;
   color: var(--ruihe-text);
 }
@@ -673,7 +673,7 @@ table.data-table td.label {
   font-weight: 600;
   color: var(--ruihe-forest);
   margin-bottom: 6px;
-  font-size: 15px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
 }
 
 .callout.success { background: rgba(75, 135, 47, 0.06); border-left-color: var(--ruihe-green); }
@@ -696,14 +696,14 @@ table.data-table td.label {
 
 .footer-block h4 {
   color: var(--ruihe-gold);
-  font-size: 13px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   letter-spacing: 2px;
   font-weight: 500;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
 
-.footer-block p { font-size: 14px; line-height: 2; }
+.footer-block p { font-size:clamp(20px,1.2vw + 5px,22px); line-height: 2; }
 .footer-block strong { color: white; font-weight: 600; }
 
 .footer-bottom {
@@ -711,7 +711,7 @@ table.data-table td.label {
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: rgba(255,255,255,0.5);
   flex-wrap: wrap;
   gap: 12px;
@@ -751,7 +751,7 @@ table.data-table td.label {
 }
 
 .modal-header h2 {
-  font-size: 18px;
+  font-size:clamp(20px,1.2vw + 5px,24px);
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -759,7 +759,7 @@ table.data-table td.label {
 .modal-body {
   padding: 28px;
   overflow-y: auto;
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   line-height: 1.9;
 }
 
@@ -777,7 +777,7 @@ table.data-table td.label {
   border: 1px solid var(--ruihe-border);
   padding: 16px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   overflow-x: auto;
   max-height: 300px;
   font-family: 'Inter', 'Consolas', monospace;
@@ -806,20 +806,20 @@ table.data-table td.label {
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .container { padding: 0 16px; }
-  .header-title h1 { font-size: 24px; letter-spacing: 1px; }
-  .header-title .subtitle { font-size: 13px; }
+  .header-title h1 { font-size:clamp(24px,1.2vw + 9px,30px); letter-spacing: 1px; }
+  .header-title .subtitle { font-size:clamp(20px,1.2vw + 5px,22px); }
   .header-top { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .header-meta { text-align: left; font-size: 12px; }
+  .header-meta { text-align: left; font-size:clamp(20px,1.2vw + 5px,22px); }
   .brand-logo { height: 36px; }
-  .brand-name { font-size: 17px; }
-  .brand-tagline { font-size: 12px; }
+  .brand-name { font-size:clamp(20px,1.2vw + 5px,23px); }
+  .brand-tagline { font-size:clamp(20px,1.2vw + 5px,22px); }
   .progress-inner { flex-wrap: wrap; gap: 12px; }
   .progress-bar-wrap { width: 100%; order: 2; }
   .toolbar { order: 1; width: 100%; flex-wrap: wrap; }
-  .btn { font-size: 12px; padding: 6px 12px; }
+  .btn { font-size:clamp(20px,1.2vw + 5px,22px); padding: 6px 12px; }
   .section-body { padding: 16px; }
   .section-header { padding: 14px 16px; }
-  .section-title { font-size: 16px; }
+  .section-title { font-size:clamp(20px,1.2vw + 5px,22px); }
   .check-row { flex-wrap: wrap; }
   .check-actions { margin-left: auto; }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
@@ -829,16 +829,16 @@ table.data-table td.label {
   /* 評估卡片 2欄→1欄 */
   .section-body > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
   /* 表格橫向捲動 */
-  .data-table { font-size: 13px; }
+  .data-table { font-size:clamp(20px,1.2vw + 5px,22px); }
   table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   /* recipient 字縮小 */
-  .header-title .recipient strong { font-size: 15px; }
+  .header-title .recipient strong { font-size:clamp(20px,1.2vw + 5px,22px); }
 }
 
 @media (max-width: 480px) {
   .container { padding: 0 12px; }
-  .header-title h1 { font-size: 20px; }
-  .eyebrow { font-size: 10px; letter-spacing: 2px; }
+  .header-title h1 { font-size:clamp(20px,1.2vw + 5px,22px); }
+  .eyebrow { font-size:clamp(20px,1.2vw + 5px,22px); letter-spacing: 2px; }
   main { padding: 24px 0 60px; }
   .section-body { padding: 14px; }
 }
@@ -860,7 +860,7 @@ table.data-table td.label {
   padding: 12px 20px;
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   z-index: 999;
   transform: translateY(100px);
   opacity: 0;
@@ -923,7 +923,7 @@ table.data-table td.label {
 }
 
 .part-label {
-  font-size: 12px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   letter-spacing: 4px;
   color: var(--ruihe-gold);
   font-weight: 600;
@@ -932,7 +932,7 @@ table.data-table td.label {
 }
 
 .part-title {
-  font-size: 26px;
+  font-size:clamp(24px,1.2vw + 9px,32px);
   font-weight: 700;
   color: white;
   letter-spacing: 2px;
@@ -941,7 +941,7 @@ table.data-table td.label {
 }
 
 .part-desc {
-  font-size: 14px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   color: rgba(255, 255, 255, 0.88);
   line-height: 1.8;
   max-width: 680px;
@@ -955,7 +955,7 @@ table.data-table td.label {
   background: rgba(192, 164, 52, 0.2);
   border: 1px solid rgba(192, 164, 52, 0.4);
   color: var(--ruihe-gold);
-  font-size: 11px;
+  font-size:clamp(20px,1.2vw + 5px,22px);
   letter-spacing: 1px;
   border-radius: 3px;
   font-weight: 500;
@@ -963,8 +963,8 @@ table.data-table td.label {
 
 @media (max-width: 768px) {
   .part-banner { padding: 20px 24px; gap: 16px; flex-direction: column; align-items: flex-start; }
-  .part-number { font-size: 48px; }
-  .part-title { font-size: 22px; letter-spacing: 1px; }
+  .part-number { font-size:clamp(44px,1.2vw + 29px,54px); }
+  .part-title { font-size:clamp(20px,1.2vw + 5px,24px); letter-spacing: 1px; }
 }
 
 @media print {
@@ -973,6 +973,10 @@ table.data-table td.label {
   .part-banner .part-desc { color: var(--ruihe-text) !important; }
   .part-banner::before { background: var(--ruihe-gold); }
 }
+/* __FONTFIX_SAFETY__ */
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+img,svg{max-width:100%;height:auto}
+*{overflow-wrap:break-word;word-break:break-word}
 </style>
 </head>
 <body>
@@ -1066,44 +1070,44 @@ table.data-table td.label {
 
           <div style="border:1px solid var(--ruihe-border-light);border-radius:6px;padding:20px 24px;background:white;">
             <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;">A</div>
+              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:clamp(20px,1.2vw + 5px,22px);flex-shrink:0;">A</div>
               <div style="font-weight:600;color:var(--ruihe-forest);">法規架構研究</div>
-              <div style="margin-left:auto;font-size:12px;color:var(--ruihe-text-muted);">7 項</div>
+              <div style="margin-left:auto;font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);">7 項</div>
             </div>
-            <div style="font-size:13px;color:var(--ruihe-text-light);line-height:1.9;">
+            <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);line-height:1.9;">
               建築組別 I 類組設置法源、公危辦法六類分類與管制量、室內儲存場所構造規格、保留空地計算、丁建容許使用、危險物品申報義務、環評觸發條件
             </div>
           </div>
 
           <div style="border:1px solid var(--ruihe-border-light);border-radius:6px;padding:20px 24px;background:white;">
             <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;">B</div>
+              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:clamp(20px,1.2vw + 5px,22px);flex-shrink:0;">B</div>
               <div style="font-weight:600;color:var(--ruihe-forest);">目標標的具體評估</div>
-              <div style="margin-left:auto;font-size:12px;color:var(--ruihe-text-muted);">9 項</div>
+              <div style="margin-left:auto;font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);">9 項</div>
             </div>
-            <div style="font-size:13px;color:var(--ruihe-text-light);line-height:1.9;">
+            <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);line-height:1.9;">
               地號權屬查詢、使用分區確認、套繪圖比對、容積試算、保留空地可行性、面寬動線確認、行情比對、地上負擔狀況、周邊敏感設施
             </div>
           </div>
 
           <div style="border:1px solid var(--ruihe-border-light);border-radius:6px;padding:20px 24px;background:white;">
             <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;">C</div>
+              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:clamp(20px,1.2vw + 5px,22px);flex-shrink:0;">C</div>
               <div style="font-weight:600;color:var(--ruihe-forest);">區位研究與替代方案</div>
-              <div style="margin-left:auto;font-size:12px;color:var(--ruihe-text-muted);">6 項</div>
+              <div style="margin-left:auto;font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);">6 項</div>
             </div>
-            <div style="font-size:13px;color:var(--ruihe-text-light);line-height:1.9;">
+            <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);line-height:1.9;">
               大園工業區引進事業類別、現有售案行情掃描、半徑 15 分鐘車程替代區位盤點、各備援方案引進事業類別比對、危化倉許可可行性確認、替代區位行情區間掌握
             </div>
           </div>
 
           <div style="border:1px solid var(--ruihe-border-light);border-radius:6px;padding:20px 24px;background:white;">
             <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;">D</div>
+              <div style="width:28px;height:28px;background:var(--ruihe-green);color:white;border-radius:4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:clamp(20px,1.2vw + 5px,22px);flex-shrink:0;">D</div>
               <div style="font-weight:600;color:var(--ruihe-forest);">專業夥伴對接準備</div>
-              <div style="margin-left:auto;font-size:12px;color:var(--ruihe-text-muted);">3 項</div>
+              <div style="margin-left:auto;font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);">3 項</div>
             </div>
-            <div style="font-size:13px;color:var(--ruihe-text-light);line-height:1.9;">
+            <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);line-height:1.9;">
               特約地政士　陳元宏（27 年實務資歷，勝浤地政士事務所）　｜　常年法律顧問　亞細亞國際法律事務所（陳頂新律師）　｜　全聯會履約保證機制
             </div>
           </div>
@@ -1124,12 +1128,12 @@ table.data-table td.label {
       <div class="section-body">
         <p class="section-intro">本案規劃之危化倉儲設施所適用之核心法規為《公共危險物品及可燃性高壓氣體製造儲存處理場所設置標準暨安全管理辦法》（簡稱「公危辦法」）。其中第 23 條規定之保留空地寬度，直接影響基地有效利用率，為選址評估之關鍵依據之一。</p>
 
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin:24px 0 12px;">3.1　保留空地寬度（依管制量倍數）</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin:24px 0 12px;">3.1　保留空地寬度（依管制量倍數）</h3>
 
-        <p style="font-size:13.5px;color:var(--ruihe-text-light);margin-bottom:16px;">管制量倍數 ＝ 實際儲存量 ÷ 各類物品法定管制量。倍數越高，所需保留空地越寬。</p>
+        <p style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);margin-bottom:16px;">管制量倍數 ＝ 實際儲存量 ÷ 各類物品法定管制量。倍數越高，所需保留空地越寬。</p>
 
         <div style="border:1px solid var(--ruihe-border);border-radius:6px;overflow:hidden;margin:16px 0;">
-          <table style="width:100%;border-collapse:collapse;font-size:14px;">
+          <table style="width:100%;border-collapse:collapse;font-size:clamp(20px,1.2vw + 5px,22px);">
             <thead>
               <tr style="background:var(--ruihe-green);color:white;">
                 <th style="padding:12px 16px;text-align:center;font-weight:500;letter-spacing:0.5px;">管制量倍數</th>
@@ -1157,9 +1161,9 @@ table.data-table td.label {
           <strong>管制量倍數越高，所需保留空地越寬，淨可用基地面積越小。</strong>因此在評估候選物件時，「基地面寬」與「總面積」是兩個關鍵指標 —— 面寬不足將大幅壓縮分區操作空間；總面積不足則無法容納所需之保留空地。瑞禾於評估各候選物件時，均會就最高分級情境預作試算，確保所推介之標的具備充分操作彈性。
         </div>
 
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin:32px 0 12px;">3.2　其他關鍵法規架構</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin:32px 0 12px;">3.2　其他關鍵法規架構</h3>
         <p class="section-intro">本案亦涉及下列相關法規，瑞禾於前期評估中均已對照確認（詳見前述 Part 1 第 2 章「前期評估完成項目」A 區塊）：</p>
-        <ul style="font-size:14px;line-height:2;padding-left:20px;color:var(--ruihe-text);">
+        <ul style="font-size:clamp(20px,1.2vw + 5px,22px);line-height:2;padding-left:20px;color:var(--ruihe-text);">
           <li>建築技術規則使用組別 I 類組（危險物品類）設置法源</li>
           <li>公共危險物品六類分類與管制量倍數計算原則</li>
           <li>非都市土地使用管制規則附表一 —— 丁種建築用地容許使用項目</li>
@@ -1173,7 +1177,7 @@ table.data-table td.label {
     <!-- 變動資訊分隔線 -->
     <div style="margin:40px 0 32px;display:flex;align-items:center;gap:16px;">
       <div style="flex:1;height:1px;background:var(--ruihe-border);"></div>
-      <div style="font-size:12px;color:var(--ruihe-text-muted);letter-spacing:2px;white-space:nowrap;">以下為本案評估標的</div>
+      <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);letter-spacing:2px;white-space:nowrap;">以下為本案評估標的</div>
       <div style="flex:1;height:1px;background:var(--ruihe-border);"></div>
     </div>
 
@@ -1187,7 +1191,7 @@ table.data-table td.label {
         </div>
       </div>
       <div class="section-body">
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin-bottom:12px;">4.1　標的概覽</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin-bottom:12px;">4.1　標的概覽</h3>
         <p class="section-intro">桃園大園工業區民族街 8、8-1、10 號廠房（詳細物件資料另見《銷售提案報告》）。重點摘要：</p>
         <table class="data-table">
           <tbody>
@@ -1202,9 +1206,9 @@ table.data-table td.label {
 
         <!-- 建物現況說明 -->
         <div style="margin:20px 0;border:1px solid var(--ruihe-border);border-radius:6px;overflow:hidden;">
-          <div style="background:var(--ruihe-cream);padding:12px 20px;border-bottom:1px solid var(--ruihe-border);font-weight:600;color:var(--ruihe-forest);font-size:14px;">建物登記資料摘要（5 建號）</div>
+          <div style="background:var(--ruihe-cream);padding:12px 20px;border-bottom:1px solid var(--ruihe-border);font-weight:600;color:var(--ruihe-forest);font-size:clamp(20px,1.2vw + 5px,22px);">建物登記資料摘要（5 建號）</div>
           <div style="overflow-x:auto;">
-          <table style="width:100%;border-collapse:collapse;font-size:13px;">
+          <table style="width:100%;border-collapse:collapse;font-size:clamp(20px,1.2vw + 5px,22px);">
             <thead>
               <tr style="background:var(--ruihe-forest);color:white;">
                 <th style="padding:10px 14px;text-align:left;font-weight:500;">門牌</th>
@@ -1233,7 +1237,7 @@ table.data-table td.label {
         </div>
 
         <!-- 行情分析摘要 -->
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin:32px 0 12px;">4.2　實價登錄行情分析摘要</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin:32px 0 12px;">4.2　實價登錄行情分析摘要</h3>
         <p class="section-intro" style="margin-bottom:16px;">以下為瑞禾依內政部實價登錄資料（桃園市 112Q3–115Q1，共 22 季）所作之市場行情分析重點摘要。</p>
 
         <table class="data-table" style="margin-bottom:16px;">
@@ -1249,13 +1253,13 @@ table.data-table td.label {
         </div>
 
         <div style="text-align:right;margin-bottom:32px;">
-          <a href="./market.html" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--ruihe-forest);color:white;padding:10px 20px;border-radius:4px;font-size:13px;font-weight:600;text-decoration:none;letter-spacing:0.5px;">
+          <a href="./market.html" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--ruihe-forest);color:white;padding:10px 20px;border-radius:4px;font-size:clamp(20px,1.2vw + 5px,22px);font-weight:600;text-decoration:none;letter-spacing:0.5px;">
             完整行情分析報告　→
           </a>
         </div>
 
         <!-- 同地段比較物件 -->
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin:32px 0 12px;">4.3　同地段比較物件（不符合需求）</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin:32px 0 12px;">4.3　同地段比較物件（不符合需求）</h3>
         <p class="section-intro" style="margin-bottom:16px;">同地段現有一筆工業用地正在市場流通，供參考比較。</p>
 
         <table class="data-table" style="margin-bottom:12px;">
@@ -1278,7 +1282,7 @@ table.data-table td.label {
           此物件（41-4 地號）與實價登錄成交案（41-5 地號，2024 年 11 月，21.24 萬／坪）為<strong>同地段相鄰地號，地目組成完全相同</strong>（丁建 + 道路用地）。41-5 地號已成交後，41-4 地號現以 26.98 萬／坪重新掛牌，較已知實際成交價溢價約 <strong>27%</strong>。
         </div>
 
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin:32px 0 12px;">4.4　四大契合面向</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin:32px 0 12px;">4.4　四大契合面向</h3>
 
         <div class="callout success">
           <div class="callout-title">① 用地編定完全符合需求</div>
@@ -1298,11 +1302,11 @@ table.data-table td.label {
         </div>
 
         <!-- ===== 4.3 現址使用者及環保評估 ===== -->
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin:32px 0 4px;">4.5　現址使用者及環保評估</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin:32px 0 4px;">4.5　現址使用者及環保評估</h3>
         <p class="section-intro" style="margin-bottom:20px;">依環保署公開資料及透明足跡資料庫，整理現址使用者基本資料、歷史環保紀錄及基地周邊水域概況，供　貴司進行盡職調查時參考。</p>
 
         <!-- 4.3.1 B公司基本資料 -->
-        <h4 style="font-size:14px;color:var(--ruihe-text-light);letter-spacing:1px;margin:0 0 12px;text-transform:uppercase;">4.5.1　現址使用者基本資料</h4>
+        <h4 style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);letter-spacing:1px;margin:0 0 12px;text-transform:uppercase;">4.5.1　現址使用者基本資料</h4>
         <table class="data-table" style="margin-bottom:20px;">
           <tbody>
             <tr><td class="label">事業名稱</td><td><strong>B公司</strong></td></tr>
@@ -1317,8 +1321,8 @@ table.data-table td.label {
         <!-- 解除列管日期 -->
         <div class="callout success" style="margin-bottom:20px;">
           <div class="callout-title">✓ 各類污染列管均已解除（環保署資料）</div>
-          <table style="width:100%;font-size:13px;border-collapse:collapse;margin-top:8px;">
-            <thead><tr style="color:var(--ruihe-text-muted);font-size:12px;">
+          <table style="width:100%;font-size:clamp(20px,1.2vw + 5px,22px);border-collapse:collapse;margin-top:8px;">
+            <thead><tr style="color:var(--ruihe-text-muted);font-size:clamp(20px,1.2vw + 5px,22px);">
               <th style="padding:4px 0;text-align:left;font-weight:500;">污染類別</th>
               <th style="padding:4px 0;text-align:left;font-weight:500;">解除列管日期</th>
             </tr></thead>
@@ -1329,16 +1333,16 @@ table.data-table td.label {
               <tr><td style="padding:6px 0;">廢棄物</td><td style="padding:6px 0;">2025-08-12</td></tr>
             </tbody>
           </table>
-          <div style="font-size:12px;color:var(--ruihe-text-muted);margin-top:8px;">資料來源：環保署管制編號（已隱去），資料日期 2026-01-11</div>
+          <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);margin-top:8px;">資料來源：環保署管制編號（已隱去），資料日期 2026-01-11</div>
         </div>
 
         <!-- 4.3.2 歷史環保裁罰紀錄 -->
-        <h4 style="font-size:14px;color:var(--ruihe-text-light);letter-spacing:1px;margin:24px 0 12px;text-transform:uppercase;">4.5.2　歷史環保裁罰紀錄（透明足跡 · 共 13 筆）</h4>
+        <h4 style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);letter-spacing:1px;margin:24px 0 12px;text-transform:uppercase;">4.5.2　歷史環保裁罰紀錄（透明足跡 · 共 13 筆）</h4>
         <div class="callout" style="border-left-color:#C0533A;background:rgba(192,83,58,0.04);margin-bottom:12px;">
           染整業為台灣土壤及地下水污染高風險前 5 大產業。依《土壤及地下水污染整治法》第 7 條，買方若被認定為污染土地關係人，整治責任將一併繼受，屬本案盡職調查之優先查證項目。
         </div>
         <div style="overflow-x:auto;margin-bottom:20px;">
-        <table class="data-table" style="font-size:13px;">
+        <table class="data-table" style="font-size:clamp(20px,1.2vw + 5px,22px);">
           <thead>
             <tr>
               <th style="width:105px;">裁罰日期</th>
@@ -1361,18 +1365,18 @@ table.data-table td.label {
             <tr><td>2010-04-01</td><td>空氣污染防制法 第 24 條第 2 項</td><td style="text-align:center;">10 萬</td><td>空污違規</td></tr>
           </tbody>
         </table>
-        <div style="font-size:12px;color:var(--ruihe-text-muted);padding:8px 0;">資料來源：透明足跡（已隱去）（地球公民基金會）</div>
+        <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);padding:8px 0;">資料來源：透明足跡（已隱去）（地球公民基金會）</div>
         </div>
 
         <!-- 4.3.3 大庄埤 -->
-        <h4 style="font-size:14px;color:var(--ruihe-text-light);letter-spacing:1px;margin:24px 0 12px;text-transform:uppercase;">4.5.3　基地周邊水域：大庄埤</h4>
+        <h4 style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);letter-spacing:1px;margin:24px 0 12px;text-transform:uppercase;">4.5.3　基地周邊水域：大庄埤</h4>
         <div class="callout" style="margin-bottom:12px;">
           <div class="callout-title">基地東南側緊鄰大庄埤（大型農業灌溉埤塘）</div>
           大庄埤為桃園農田水利會管轄之大型灌溉埤塘，由地籍圖資顯示與本標的基地邊界相鄰。
         </div>
 
-        <div style="background:rgba(192,164,52,0.06);border:1px solid rgba(192,164,52,0.3);border-radius:4px;padding:16px 20px;margin-bottom:12px;font-size:14px;">
-          <div style="font-weight:600;color:var(--ruihe-forest);margin-bottom:10px;font-size:15px;">公共危險物品辦法 第 8 條第 5 款</div>
+        <div style="background:rgba(192,164,52,0.06);border:1px solid rgba(192,164,52,0.3);border-radius:4px;padding:16px 20px;margin-bottom:12px;font-size:clamp(20px,1.2vw + 5px,22px);">
+          <div style="font-weight:600;color:var(--ruihe-forest);margin-bottom:10px;font-size:clamp(20px,1.2vw + 5px,22px);">公共危險物品辦法 第 8 條第 5 款</div>
           <div style="background:white;border-left:3px solid var(--ruihe-gold);padding:10px 16px;border-radius:0 4px 4px 0;margin-bottom:12px;line-height:1.9;color:var(--ruihe-text);">
             「依本辦法應設置超過三公尺保留空地寬度之場所，其保留空地面臨<strong>海洋、湖泊、水堰或河川</strong>者，得縮減為三公尺。」
           </div>
@@ -1387,27 +1391,27 @@ table.data-table td.label {
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;">
           <div style="grid-column:1/3;">
             <img src="./大庄埤3.png" alt="大庄埤區位圖" style="width:100%;border-radius:4px;border:1px solid var(--ruihe-border);display:block;">
-            <div style="font-size:12px;color:var(--ruihe-text-muted);margin-top:4px;text-align:center;">大庄埤區位圖 — 民族街物件（紅點）與大庄埤相對位置</div>
+            <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);margin-top:4px;text-align:center;">大庄埤區位圖 — 民族街物件（紅點）與大庄埤相對位置</div>
           </div>
           <div>
             <img src="./大庄埤1.png" alt="地籍圖套疊" style="width:100%;border-radius:4px;border:1px solid var(--ruihe-border);display:block;">
-            <div style="font-size:12px;color:var(--ruihe-text-muted);margin-top:4px;text-align:center;">地籍圖套疊 — 基地範圍與埤塘邊界</div>
+            <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);margin-top:4px;text-align:center;">地籍圖套疊 — 基地範圍與埤塘邊界</div>
           </div>
           <div>
             <img src="./大庄埤2.png" alt="衛星圖" style="width:100%;border-radius:4px;border:1px solid var(--ruihe-border);display:block;">
-            <div style="font-size:12px;color:var(--ruihe-text-muted);margin-top:4px;text-align:center;">衛星圖 — 基地（橘色）與大庄埤水域</div>
+            <div style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);margin-top:4px;text-align:center;">衛星圖 — 基地（橘色）與大庄埤水域</div>
           </div>
         </div>
 
         <!-- 4.3.4 大園區列管場址 -->
-        <h4 style="font-size:14px;color:var(--ruihe-text-light);letter-spacing:1px;margin:24px 0 12px;text-transform:uppercase;">4.5.4　大園區公告列管場址（環保署 2026-02）</h4>
+        <h4 style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);letter-spacing:1px;margin:24px 0 12px;text-transform:uppercase;">4.5.4　大園區公告列管場址（環保署 2026-02）</h4>
         <div class="callout success" style="margin-bottom:16px;">
           <div class="callout-title">✓ B公司　目前不在列管狀態</div>
           依環保署 2026 年 2 月公告資訊，B公司目前並未列入大園區控制場址或整治場址，本資料亦非顯示歷史紀錄，而是反映目前現況。以下為大園區同期公告之其他場址供參考。
         </div>
         <div class="callout" style="border-left-color:#C0533A;background:rgba(192,83,58,0.05);margin-bottom:12px;">
           <div class="callout-title" style="color:#C0533A;">控制場址（整治進行中）</div>
-          <table style="width:100%;font-size:13px;border-collapse:collapse;margin-top:8px;">
+          <table style="width:100%;font-size:clamp(20px,1.2vw + 5px,22px);border-collapse:collapse;margin-top:8px;">
             <tr><td style="padding:5px 0;width:50%;">• 虹冠實業股份有限公司</td><td style="padding:5px 0;">• 原億碩實業有限公司大園廠</td></tr>
             <tr><td style="padding:5px 0;">• 原耀元電子股份有限公司大園廠</td><td style="padding:5px 0;">• 全峰工業股份有限公司（桃園廠）</td></tr>
           </table>
@@ -1418,14 +1422,14 @@ table.data-table td.label {
         </div>
         <div class="callout success" style="margin-bottom:0;">
           <div class="callout-title">✓ 已解除控制場址</div>
-          <table style="width:100%;font-size:13px;border-collapse:collapse;margin-top:8px;">
+          <table style="width:100%;font-size:clamp(20px,1.2vw + 5px,22px);border-collapse:collapse;margin-top:8px;">
             <tr><td style="padding:5px 0;width:50%;">• 三府實業有限公司</td><td style="padding:5px 0;">• A公司大園廠　✓ 已解除</td></tr>
             <tr><td style="padding:5px 0;">• 大園鄉埔心段海豐坡小段 1009 地號</td><td style="padding:5px 0;">• 大園區埔心段三塊厝小段 290（部分）地號</td></tr>
             <tr><td style="padding:5px 0;">• 大園區照鏡段 197-2（部分）地號</td><td style="padding:5px 0;">• 大園區照鏡段 199（部分）地號</td></tr>
           </table>
         </div>
 
-        <h3 style="font-size:17px;color:var(--ruihe-forest);margin:32px 0 12px;">4.6　盡職調查建議事項</h3>
+        <h3 style="font-size:clamp(20px,1.2vw + 5px,23px);color:var(--ruihe-forest);margin:32px 0 12px;">4.6　盡職調查建議事項</h3>
         <p class="section-intro">下列六項屬正式議價前之建議查證事項，瑞禾將協同相關專業單位逐項落實。</p>
         <div data-block="DD"></div>
       </div>

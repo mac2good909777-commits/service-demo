@@ -43,30 +43,30 @@ body {
 .brand { display: flex; align-items: center; gap: 16px; }
 .brand-logo { height: 48px; width: auto; display: block; }
 .brand-text { line-height: 1.4; }
-.brand-name { font-size: 20px; font-weight: 600; letter-spacing: 1px; }
-.brand-tagline { font-size: 13px; color: rgba(255,255,255,0.75); letter-spacing: 0.5px; }
-.header-meta { text-align: right; font-size: 13px; color: rgba(255,255,255,0.85); }
+.brand-name { font-size:clamp(20px,1.2vw + 5px,22px); font-weight: 600; letter-spacing: 1px; }
+.brand-tagline { font-size:clamp(20px,1.2vw + 5px,22px); color: rgba(255,255,255,0.75); letter-spacing: 0.5px; }
+.header-meta { text-align: right; font-size:clamp(20px,1.2vw + 5px,22px); color: rgba(255,255,255,0.85); }
 .header-meta strong { color: var(--ruihe-gold); font-weight: 600; }
 .header-title { padding: 18px 0 24px; }
-.eyebrow { display: inline-block; font-size: 13px; letter-spacing: 3px; color: var(--ruihe-gold); font-weight: 500; margin-bottom: 12px; text-transform: uppercase; }
-.header-title h1 { font-size: 38px; font-weight: 700; letter-spacing: 2px; color: white; margin-bottom: 8px; }
-.header-title .subtitle { font-size: 17px; color: rgba(255,255,255,0.85); font-weight: 400; letter-spacing: 1px; }
-.header-title .recipient { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(192, 164, 52, 0.3); font-size: 14px; color: rgba(255,255,255,0.8); }
-.header-title .recipient strong { color: white; font-size: 18px; font-weight: 600; margin-left: 8px; letter-spacing: 1px; }
+.eyebrow { display: inline-block; font-size:clamp(20px,1.2vw + 5px,22px); letter-spacing: 3px; color: var(--ruihe-gold); font-weight: 500; margin-bottom: 12px; text-transform: uppercase; }
+.header-title h1 { font-size:clamp(34px,1.2vw + 19px,44px); font-weight: 700; letter-spacing: 2px; color: white; margin-bottom: 8px; }
+.header-title .subtitle { font-size:clamp(20px,1.2vw + 5px,23px); color: rgba(255,255,255,0.85); font-weight: 400; letter-spacing: 1px; }
+.header-title .recipient { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(192, 164, 52, 0.3); font-size:clamp(20px,1.2vw + 5px,22px); color: rgba(255,255,255,0.8); }
+.header-title .recipient strong { color: white; font-size:clamp(20px,1.2vw + 5px,24px); font-weight: 600; margin-left: 8px; letter-spacing: 1px; }
 
 /* Print bar */
 .print-bar { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 1px solid var(--ruihe-border); box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
 .print-bar-inner { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; }
-.doc-tag { font-size: 13px; color: var(--ruihe-text-light); }
+.doc-tag { font-size:clamp(20px,1.2vw + 5px,22px); color: var(--ruihe-text-light); }
 .doc-tag b { color: var(--ruihe-forest); }
-.btn { padding: 8px 16px; border: 1px solid var(--ruihe-border); background: white; color: var(--ruihe-text); font-size: 13px; border-radius: 4px; cursor: pointer; font-family: inherit; transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px; }
+.btn { padding: 8px 16px; border: 1px solid var(--ruihe-border); background: white; color: var(--ruihe-text); font-size:clamp(20px,1.2vw + 5px,22px); border-radius: 4px; cursor: pointer; font-family: inherit; transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px; }
 .btn:hover { border-color: var(--ruihe-green); color: var(--ruihe-green); background: var(--ruihe-cream); }
 
 /* Page nav */
 .site-nav-bar { background: var(--ruihe-forest); position: sticky; top: 0; z-index: 101; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 .site-nav { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 10px 16px; }
 .site-nav a {
-  padding: 9px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+  padding: 9px 16px; border-radius: 4px; font-size:clamp(20px,1.2vw + 5px,22px); font-weight: 600; letter-spacing: 0.5px;
   color: rgba(255,255,255,0.85); text-decoration: none; transition: all 0.2s;
   background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.25);
 }
@@ -76,39 +76,39 @@ body {
 
 /* Main */
 main { padding: 48px 0 80px; }
-.greeting { background: white; border: 1px solid var(--ruihe-border); border-left: 4px solid var(--ruihe-green); padding: 32px 40px; margin-bottom: 40px; font-size: 15px; line-height: 2; color: var(--ruihe-text); box-shadow: var(--ruihe-shadow); }
+.greeting { background: white; border: 1px solid var(--ruihe-border); border-left: 4px solid var(--ruihe-green); padding: 32px 40px; margin-bottom: 40px; font-size:clamp(20px,1.2vw + 5px,22px); line-height: 2; color: var(--ruihe-text); box-shadow: var(--ruihe-shadow); }
 .greeting p { margin-bottom: 12px; }
 .greeting p:last-child { margin-bottom: 0; }
 .greeting .signature { text-align: right; margin-top: 24px; padding-top: 20px; border-top: 1px dashed var(--ruihe-border); color: var(--ruihe-forest); font-weight: 600; }
-.unit-tag { display: inline-block; margin-bottom: 16px; padding: 4px 14px; background: rgba(192, 164, 52, 0.12); border: 1px solid rgba(192, 164, 52, 0.45); color: var(--ruihe-gold); font-size: 12px; letter-spacing: 1.5px; border-radius: 3px; font-weight: 600; }
+.unit-tag { display: inline-block; margin-bottom: 16px; padding: 4px 14px; background: rgba(192, 164, 52, 0.12); border: 1px solid rgba(192, 164, 52, 0.45); color: var(--ruihe-gold); font-size:clamp(20px,1.2vw + 5px,22px); letter-spacing: 1.5px; border-radius: 3px; font-weight: 600; }
 
 /* Section */
 .section { background: white; border: 1px solid var(--ruihe-border); border-radius: 6px; margin-bottom: 32px; overflow: hidden; box-shadow: var(--ruihe-shadow); }
 .section-header { background: linear-gradient(to right, var(--ruihe-forest), var(--ruihe-green)); color: white; padding: 20px 32px; display: flex; align-items: center; gap: 16px; }
-.section-num { width: 40px; height: 40px; background: var(--ruihe-gold); color: var(--ruihe-forest); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; font-family: 'Inter', sans-serif; flex-shrink: 0; }
-.section-title { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
-.section-subtitle { font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 2px; letter-spacing: 0.5px; }
+.section-num { width: 40px; height: 40px; background: var(--ruihe-gold); color: var(--ruihe-forest); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size:clamp(20px,1.2vw + 5px,24px); font-family: 'Inter', sans-serif; flex-shrink: 0; }
+.section-title { font-size:clamp(20px,1.2vw + 5px,24px); font-weight: 600; letter-spacing: 1px; }
+.section-subtitle { font-size:clamp(20px,1.2vw + 5px,22px); color: rgba(255,255,255,0.75); margin-top: 2px; letter-spacing: 0.5px; }
 .section-body { padding: 32px; }
-.section-intro { font-size: 14px; color: var(--ruihe-text-light); margin-bottom: 24px; line-height: 1.9; }
-h3.blk { font-size: 17px; color: var(--ruihe-forest); margin: 28px 0 12px; }
+.section-intro { font-size:clamp(20px,1.2vw + 5px,22px); color: var(--ruihe-text-light); margin-bottom: 24px; line-height: 1.9; }
+h3.blk { font-size:clamp(20px,1.2vw + 5px,23px); color: var(--ruihe-forest); margin: 28px 0 12px; }
 h3.blk:first-child { margin-top: 0; }
 
 /* Block header */
 .block-header { display: flex; align-items: center; gap: 14px; margin: 32px 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--ruihe-cream); }
 .block-header:first-child { margin-top: 0; }
-.block-label { width: 32px; height: 32px; background: var(--ruihe-green); color: white; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; font-family: 'Inter', sans-serif; flex-shrink: 0; }
-.block-title { font-size: 17px; font-weight: 600; color: var(--ruihe-forest); flex: 1; }
+.block-label { width: 32px; height: 32px; background: var(--ruihe-green); color: white; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size:clamp(20px,1.2vw + 5px,22px); font-family: 'Inter', sans-serif; flex-shrink: 0; }
+.block-title { font-size:clamp(20px,1.2vw + 5px,23px); font-weight: 600; color: var(--ruihe-forest); flex: 1; }
 
 /* Table */
-table.data-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
-table.data-table th { background: var(--ruihe-forest); color: white; padding: 12px 16px; text-align: left; font-weight: 500; font-size: 14px; letter-spacing: 0.5px; }
+table.data-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size:clamp(20px,1.2vw + 5px,22px); }
+table.data-table th { background: var(--ruihe-forest); color: white; padding: 12px 16px; text-align: left; font-weight: 500; font-size:clamp(20px,1.2vw + 5px,22px); letter-spacing: 0.5px; }
 table.data-table td { padding: 12px 16px; border-bottom: 1px solid var(--ruihe-border-light); vertical-align: top; }
 table.data-table tr:nth-child(even) td { background: var(--ruihe-bg); }
 table.data-table tr:hover td { background: var(--ruihe-cream); }
 table.data-table td.label { font-weight: 600; color: var(--ruihe-forest); background: var(--ruihe-cream) !important; width: 25%; }
 
 /* Quote table */
-table.quote { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+table.quote { width: 100%; border-collapse: collapse; margin: 16px 0; font-size:clamp(20px,1.2vw + 5px,22px); }
 table.quote th { background: var(--ruihe-forest); color: white; padding: 11px 14px; font-weight: 500; letter-spacing: 0.5px; text-align: left; }
 table.quote th.num, table.quote td.num { text-align: right; font-family: 'Inter', sans-serif; }
 table.quote th.ctr, table.quote td.ctr { text-align: center; }
@@ -117,10 +117,10 @@ table.quote tr:nth-child(even) td { background: var(--ruihe-bg); }
 table.quote tr:hover td { background: var(--ruihe-cream); }
 table.quote .grp td { background: var(--ruihe-cream) !important; font-weight: 600; color: var(--ruihe-forest); letter-spacing: 1px; }
 table.quote .it-name { font-weight: 500; }
-table.quote .remark { color: var(--ruihe-text-light); font-size: 13px; }
+table.quote .remark { color: var(--ruihe-text-light); font-size:clamp(20px,1.2vw + 5px,22px); }
 table.quote tr.sum td { background: var(--ruihe-bg) !important; font-weight: 600; color: var(--ruihe-forest); border-top: 2px solid var(--ruihe-border); }
-table.quote tr.total td { background: var(--ruihe-forest) !important; color: white; font-weight: 700; font-size: 15px; }
-table.quote tr.total td.num { color: var(--ruihe-gold); font-size: 18px; }
+table.quote tr.total td { background: var(--ruihe-forest) !important; color: white; font-weight: 700; font-size:clamp(20px,1.2vw + 5px,22px); }
+table.quote tr.total td.num { color: var(--ruihe-gold); font-size:clamp(20px,1.2vw + 5px,24px); }
 table.quote td.neg { color: #c0392b; font-family: 'Inter', sans-serif; }
 table.quote tr.recovery td { background: rgba(192, 52, 52, 0.04) !important; }
 table.quote tr.recovery .it-name { color: #c0392b; }
@@ -128,30 +128,30 @@ table.quote tr.recovery .it-name { color: #c0392b; }
 /* Info grid */
 .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 8px 0; }
 .info-card { border: 1px solid var(--ruihe-border-light); border-radius: 6px; padding: 18px 20px; background: white; }
-.info-card .ic-tag { font-size: 12px; color: var(--ruihe-text-muted); letter-spacing: 1px; }
-.info-card .ic-h { font-size: 16px; font-weight: 600; color: var(--ruihe-forest); margin: 2px 0 8px; }
-.info-card .ic-body { font-size: 13px; color: var(--ruihe-text-light); line-height: 1.8; }
-.info-card .ic-scale { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 700; color: var(--ruihe-green); margin-top: 10px; }
+.info-card .ic-tag { font-size:clamp(20px,1.2vw + 5px,22px); color: var(--ruihe-text-muted); letter-spacing: 1px; }
+.info-card .ic-h { font-size:clamp(20px,1.2vw + 5px,22px); font-weight: 600; color: var(--ruihe-forest); margin: 2px 0 8px; }
+.info-card .ic-body { font-size:clamp(20px,1.2vw + 5px,22px); color: var(--ruihe-text-light); line-height: 1.8; }
+.info-card .ic-scale { font-family: 'Inter', sans-serif; font-size:clamp(20px,1.2vw + 5px,24px); font-weight: 700; color: var(--ruihe-green); margin-top: 10px; }
 
 /* Callout */
-.callout { background: var(--ruihe-cream); border-left: 4px solid var(--ruihe-gold); padding: 16px 20px; border-radius: 0 4px 4px 0; margin: 18px 0; font-size: 14px; line-height: 1.9; color: var(--ruihe-text); }
-.callout-title { font-weight: 600; color: var(--ruihe-forest); margin-bottom: 6px; font-size: 15px; }
+.callout { background: var(--ruihe-cream); border-left: 4px solid var(--ruihe-gold); padding: 16px 20px; border-radius: 0 4px 4px 0; margin: 18px 0; font-size:clamp(20px,1.2vw + 5px,22px); line-height: 1.9; color: var(--ruihe-text); }
+.callout-title { font-weight: 600; color: var(--ruihe-forest); margin-bottom: 6px; font-size:clamp(20px,1.2vw + 5px,22px); }
 .callout.success { background: rgba(75, 135, 47, 0.06); border-left-color: var(--ruihe-green); }
 .callout.success .callout-title { color: var(--ruihe-green); }
 .callout.warn { background: rgba(192, 164, 52, 0.08); border-left-color: var(--ruihe-gold); }
 .callout.alert { background: rgba(192, 52, 52, 0.06); border-left-color: #c0392b; }
 .callout.alert .callout-title { color: #c0392b; }
-ul.clean { list-style: none; font-size: 14px; line-height: 1.95; }
+ul.clean { list-style: none; font-size:clamp(20px,1.2vw + 5px,22px); line-height: 1.95; }
 ul.clean li { padding-left: 18px; position: relative; color: var(--ruihe-text); }
-ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--ruihe-green); font-size: 11px; top: 4px; }
+ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--ruihe-green); font-size:clamp(20px,1.2vw + 5px,22px); top: 4px; }
 
 /* Footer */
 .site-footer { background: var(--ruihe-forest); color: rgba(255,255,255,0.85); padding: 48px 0 32px; margin-top: 80px; }
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 32px; }
-.footer-block h4 { color: var(--ruihe-gold); font-size: 13px; letter-spacing: 2px; font-weight: 500; margin-bottom: 16px; text-transform: uppercase; }
-.footer-block p { font-size: 14px; line-height: 2; }
+.footer-block h4 { color: var(--ruihe-gold); font-size:clamp(20px,1.2vw + 5px,22px); letter-spacing: 2px; font-weight: 500; margin-bottom: 16px; text-transform: uppercase; }
+.footer-block p { font-size:clamp(20px,1.2vw + 5px,22px); line-height: 2; }
 .footer-block strong { color: white; font-weight: 600; }
-.footer-bottom { border-top: 1px solid rgba(192, 164, 52, 0.2); padding-top: 24px; display: flex; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 12px; }
+.footer-bottom { border-top: 1px solid rgba(192, 164, 52, 0.2); padding-top: 24px; display: flex; justify-content: space-between; font-size:clamp(20px,1.2vw + 5px,22px); color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 12px; }
 
 /* Print */
 @media print {
@@ -170,26 +170,30 @@ ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--
 /* Responsive */
 @media (max-width: 768px) {
   .container { padding: 0 16px; }
-  .header-title h1 { font-size: 24px; letter-spacing: 1px; }
-  .header-title .subtitle { font-size: 13px; }
+  .header-title h1 { font-size:clamp(24px,1.2vw + 9px,30px); letter-spacing: 1px; }
+  .header-title .subtitle { font-size:clamp(20px,1.2vw + 5px,22px); }
   .header-top { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .header-meta { text-align: left; font-size: 12px; }
+  .header-meta { text-align: left; font-size:clamp(20px,1.2vw + 5px,22px); }
   .brand-logo { height: 36px; }
   .section-body { padding: 16px; }
   .section-header { padding: 14px 16px; }
-  .section-title { font-size: 16px; }
+  .section-title { font-size:clamp(20px,1.2vw + 5px,22px); }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
   .info-grid { grid-template-columns: 1fr; }
   .greeting { padding: 18px; }
   table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .header-title .recipient strong { font-size: 15px; }
+  .header-title .recipient strong { font-size:clamp(20px,1.2vw + 5px,22px); }
 }
 @media (max-width: 480px) {
   .container { padding: 0 12px; }
-  .header-title h1 { font-size: 20px; }
-  .eyebrow { font-size: 10px; letter-spacing: 2px; }
+  .header-title h1 { font-size:clamp(20px,1.2vw + 5px,22px); }
+  .eyebrow { font-size:clamp(20px,1.2vw + 5px,22px); letter-spacing: 2px; }
   main { padding: 24px 0 60px; }
 }
+/* __FONTFIX_SAFETY__ */
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+img,svg{max-width:100%;height:auto}
+*{overflow-wrap:break-word;word-break:break-word}
 </style>
 </head>
 <body>
@@ -281,7 +285,7 @@ ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--
             <div class="ic-tag">資源回收折抵</div>
             <div class="ic-h">黑鐵／薄鐵／鋼筋</div>
             <div class="ic-body">H 型鋼、浪板、RC 鋼筋三項回收，已於報價中扣抵</div>
-            <div class="ic-scale" style="font-size:18px;color:#c0392b;">－215 萬</div>
+            <div class="ic-scale" style="font-size:clamp(20px,1.2vw + 5px,24px);color:#c0392b;">－215 萬</div>
           </div>
         </div>
 
@@ -534,7 +538,7 @@ ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--
             <!-- 合計 -->
             <tr class="sum"><td colspan="5" style="text-align:right;">合計（未稅）</td><td class="num">44,725,000</td><td></td></tr>
             <tr class="sum"><td colspan="5" style="text-align:right;">稅金（5%）</td><td class="num">2,236,250</td><td></td></tr>
-            <tr class="total"><td colspan="5" style="text-align:right;">合計（含稅）</td><td class="num">46,961,250</td><td style="color:rgba(255,255,255,0.7);font-size:13px;">約 4,696.125 萬元</td></tr>
+            <tr class="total"><td colspan="5" style="text-align:right;">合計（含稅）</td><td class="num">46,961,250</td><td style="color:rgba(255,255,255,0.7);font-size:clamp(20px,1.2vw + 5px,22px);">約 4,696.125 萬元</td></tr>
           </tbody>
         </table>
 
@@ -569,7 +573,7 @@ ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--
         <p class="section-intro">清運公司2報價共 19 個工項，依性質分六大類彙整如下，有助於與其他估價單位進行同類比較。</p>
 
         <div style="border:1px solid var(--ruihe-border);border-radius:6px;overflow:hidden;margin:8px 0 20px;">
-          <table style="width:100%;border-collapse:collapse;font-size:14px;">
+          <table style="width:100%;border-collapse:collapse;font-size:clamp(20px,1.2vw + 5px,22px);">
             <thead>
               <tr style="background:var(--ruihe-forest);color:white;">
                 <th style="padding:11px 16px;font-weight:500;width:30%;">類別</th>
@@ -579,18 +583,18 @@ ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--
               </tr>
             </thead>
             <tbody>
-              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">行政申報</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">1～2</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">650,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:13px;color:var(--ruihe-text-light);">拆照、環保局解列</td></tr>
-              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">防護工程</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">3～6</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">3,625,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:13px;color:var(--ruihe-text-light);">鷹架、鄰房防護、埤塘防污、交通維持</td></tr>
-              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">主體拆除</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">7～9</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">17,250,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:13px;color:var(--ruihe-text-light);">RC 破碎、鋼構解體、純鋼構拆除</td></tr>
-              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">特殊處理</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">10～11</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">6,000,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:13px;color:var(--ruihe-text-light);">儲槽抽空清洗、廢水池底泥清理</td></tr>
-              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">廢棄物清運</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">12～14</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">14,850,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:13px;color:var(--ruihe-text-light);">土方 130 車趟、一般廢棄物、有害廢棄物／石棉瓦</td></tr>
-              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">完工整地</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">15～16</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">4,500,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:13px;color:var(--ruihe-text-light);">廢水池回填、全區整地鋪碎石</td></tr>
-              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:#c0392b;background:rgba(192,52,52,0.06);">資源回收折抵</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">17～19</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;color:#c0392b;">-2,150,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:13px;color:var(--ruihe-text-light);">黑鐵（H 型鋼 280T）、薄鐵（浪板 30T）、RC 鋼筋（40T）</td></tr>
-              <tr style="background:var(--ruihe-forest);"><td style="padding:13px 16px;font-weight:700;color:white;">未稅合計</td><td style="padding:13px 16px;text-align:center;color:rgba(255,255,255,0.8);">—</td><td style="padding:13px 16px;text-align:right;font-family:'Inter',sans-serif;font-weight:700;color:var(--ruihe-gold);font-size:17px;">44,725,000</td><td style="padding:13px 16px;color:rgba(255,255,255,0.75);font-size:13px;">新臺幣肆仟肆佰柒拾貳萬伍仟元整</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">行政申報</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">1～2</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">650,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);">拆照、環保局解列</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">防護工程</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">3～6</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">3,625,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);">鷹架、鄰房防護、埤塘防污、交通維持</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">主體拆除</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">7～9</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">17,250,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);">RC 破碎、鋼構解體、純鋼構拆除</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">特殊處理</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">10～11</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">6,000,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);">儲槽抽空清洗、廢水池底泥清理</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">廢棄物清運</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">12～14</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">14,850,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);">土方 130 車趟、一般廢棄物、有害廢棄物／石棉瓦</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:var(--ruihe-forest);background:var(--ruihe-cream);">完工整地</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">15～16</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;">4,500,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);">廢水池回填、全區整地鋪碎石</td></tr>
+              <tr><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-weight:600;color:#c0392b;background:rgba(192,52,52,0.06);">資源回收折抵</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:center;">17～19</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);text-align:right;font-family:'Inter',sans-serif;color:#c0392b;">-2,150,000</td><td style="padding:11px 16px;border-bottom:1px solid var(--ruihe-border-light);font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-light);">黑鐵（H 型鋼 280T）、薄鐵（浪板 30T）、RC 鋼筋（40T）</td></tr>
+              <tr style="background:var(--ruihe-forest);"><td style="padding:13px 16px;font-weight:700;color:white;">未稅合計</td><td style="padding:13px 16px;text-align:center;color:rgba(255,255,255,0.8);">—</td><td style="padding:13px 16px;text-align:right;font-family:'Inter',sans-serif;font-weight:700;color:var(--ruihe-gold);font-size:clamp(20px,1.2vw + 5px,23px);">44,725,000</td><td style="padding:13px 16px;color:rgba(255,255,255,0.75);font-size:clamp(20px,1.2vw + 5px,22px);">新臺幣肆仟肆佰柒拾貳萬伍仟元整</td></tr>
             </tbody>
           </table>
         </div>
-        <p style="font-size:12px;color:var(--ruihe-text-muted);">＊含稅（5%）合計：46,961,250 元（約 4,696.125 萬元）。</p>
+        <p style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);">＊含稅（5%）合計：46,961,250 元（約 4,696.125 萬元）。</p>
       </div>
     </section>
 
@@ -607,7 +611,7 @@ ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--
 
         <h3 class="blk">4.1　兩家估價單位比較說明</h3>
         <div style="border:1px solid var(--ruihe-border);border-radius:6px;overflow:hidden;margin:8px 0 20px;">
-          <table style="width:100%;border-collapse:collapse;font-size:13.5px;">
+          <table style="width:100%;border-collapse:collapse;font-size:clamp(20px,1.2vw + 5px,22px);">
             <thead>
               <tr style="background:var(--ruihe-forest);color:white;">
                 <th style="padding:11px 16px;font-weight:500;width:25%;">比較項目</th>
@@ -668,7 +672,7 @@ ul.clean li::before { content: '◆'; position: absolute; left: 0; color: var(--
           <li>工期未填，應於決標前確認，並要求載明逾期條款以控管風險。</li>
           <li>清運公司2設立時間較短（2023 年），建議進一步核實其過往工程實績及廢棄物合法清除處理許可文件。</li>
         </ul>
-        <p style="font-size:12px;color:var(--ruihe-text-muted);margin-top:14px;">＊本頁內容係依清運公司2所提供之估價單（報價日 2026/7/2）善意整理呈現，數據以估價單位正式文件為準。</p>
+        <p style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--ruihe-text-muted);margin-top:14px;">＊本頁內容係依清運公司2所提供之估價單（報價日 2026/7/2）善意整理呈現，數據以估價單位正式文件為準。</p>
       </div>
     </section>
 

@@ -12,7 +12,7 @@
   --border: #E0DDD7; --bg-card: #F8F7F3; --down: #C0533A;
 }
 *{ box-sizing:border-box; margin:0; padding:0; }
-body{ font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; background:#ECEAE3; color:var(--text); font-size:13.5px; line-height:1.75; overflow-x:hidden; }
+body{ font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; background:#ECEAE3; color:var(--text); font-size:clamp(20px,1.2vw + 5px,22px); line-height:1.75; overflow-x:hidden; }
 .wrap{ max-width:980px; margin:0 auto; padding-bottom:60px; overflow-x:hidden; }
 /* 全域：凡非數字類元素一律允許換行 */
 p, li, td, th, div, span{ word-break:break-word; overflow-wrap:break-word; }
@@ -21,14 +21,14 @@ p, li, td, th, div, span{ word-break:break-word; overflow-wrap:break-word; }
 .hdr{ background:var(--forest); color:#fff; padding:28px 36px 0; position:relative; overflow:hidden; }
 .hdr-inner{ display:flex; align-items:flex-start; gap:22px; margin-bottom:22px; }
 .logo{ height:40px; width:auto; flex-shrink:0; }
-.hdr-text h1{ font-size:20px; font-weight:700; letter-spacing:.6px; margin-bottom:4px; }
-.hdr-text .sub{ font-size:11px; opacity:.7; }
+.hdr-text h1{ font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; letter-spacing:.6px; margin-bottom:4px; }
+.hdr-text .sub{ font-size:clamp(20px,1.2vw + 5px,22px); opacity:.7; }
 .wheat{ position:absolute; right:-5px; top:0; opacity:.07; pointer-events:none; }
 .meta-row{ display:flex; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,.1); }
 .mi{ flex:1; min-width:120px; padding:12px 14px; border-right:1px solid rgba(255,255,255,.08); }
 .mi:last-child{ border-right:none; }
-.mi .v{ font-family:"Inter",monospace; font-size:17px; font-weight:700; color:var(--gold); line-height:1.2; word-break:break-word; overflow-wrap:break-word; }
-.mi .l{ font-size:10px; opacity:.6; margin-top:3px; word-break:break-word; }
+.mi .v{ font-family:"Inter",monospace; font-size:clamp(20px,1.2vw + 5px,23px); font-weight:700; color:var(--gold); line-height:1.2; word-break:break-word; overflow-wrap:break-word; }
+.mi .l{ font-size:clamp(20px,1.2vw + 5px,22px); opacity:.6; margin-top:3px; word-break:break-word; }
 .gline{ height:3px; background:var(--gold); }
 .body{ background:#fff; padding:26px 36px 0; }
 
@@ -36,7 +36,7 @@ p, li, td, th, div, span{ word-break:break-word; overflow-wrap:break-word; }
 .site-nav-bar{ background:var(--forest); position:sticky; top:0; z-index:100; box-shadow:0 2px 8px rgba(0,0,0,.15); }
 .site-nav{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; padding:10px 16px; }
 .site-nav a{
-  padding:9px 16px; border-radius:4px; font-size:13px; font-weight:600; letter-spacing:.5px;
+  padding:9px 16px; border-radius:4px; font-size:clamp(20px,1.2vw + 5px,22px); font-weight:600; letter-spacing:.5px;
   color:rgba(255,255,255,.85); text-decoration:none; transition:all .2s;
   background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.25);
 }
@@ -46,29 +46,29 @@ p, li, td, th, div, span{ word-break:break-word; overflow-wrap:break-word; }
 
 /* SUBJECT */
 .sbj{ border:1px solid var(--border); border-radius:3px; margin-bottom:22px; overflow:hidden; }
-.sbj-hd{ background:var(--bg-card); padding:9px 16px; border-bottom:1px solid var(--border); font-size:11px; font-weight:700; color:var(--forest); letter-spacing:1.5px; text-transform:uppercase; }
+.sbj-hd{ background:var(--bg-card); padding:9px 16px; border-bottom:1px solid var(--border); font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; color:var(--forest); letter-spacing:1.5px; text-transform:uppercase; }
 .sbj-bd{ padding:14px 16px; }
 .pg{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
-.pi .k{ font-size:10.5px; color:var(--muted); margin-bottom:1px; }
-.pi .v{ font-size:13px; font-weight:600; word-break:break-word; overflow-wrap:break-word; }
-.pi.hl .v{ color:var(--down); font-size:14.5px; font-weight:700; }
-.callout{ background:var(--cream); border-left:3px solid var(--gold); padding:8px 12px; margin-top:11px; font-size:11.5px; color:#6b5000; }
+.pi .k{ font-size:clamp(20px,1.2vw + 5px,22px); color:var(--muted); margin-bottom:1px; }
+.pi .v{ font-size:clamp(20px,1.2vw + 5px,22px); font-weight:600; word-break:break-word; overflow-wrap:break-word; }
+.pi.hl .v{ color:var(--down); font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; }
+.callout{ background:var(--cream); border-left:3px solid var(--gold); padding:8px 12px; margin-top:11px; font-size:clamp(20px,1.2vw + 5px,22px); color:#6b5000; }
 
 /* SECTION */
 .sec{ margin-bottom:22px; border:1px solid var(--border); border-radius:3px; overflow:hidden; }
 .sec-hd{ padding:10px 16px; background:var(--bg-card); border-bottom:1px solid var(--border); border-left:3px solid var(--green); display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-.sec-hd h2{ font-size:13px; font-weight:700; color:var(--forest); }
-.tag{ font-size:10px; background:var(--gold); color:#fff; padding:1px 6px; border-radius:2px; font-weight:700; white-space:nowrap; }
+.sec-hd h2{ font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; color:var(--forest); }
+.tag{ font-size:clamp(20px,1.2vw + 5px,22px); background:var(--gold); color:#fff; padding:1px 6px; border-radius:2px; font-weight:700; white-space:nowrap; }
 .sec-bd{ padding:16px; }
 
 /* TABLE WRAPPER */
 .tbl-wrap{ width:100%; overflow-x:auto; }
 table.dt{
-  width:100%; min-width:600px; border-collapse:collapse; font-size:11.5px;
+  width:100%; min-width:600px; border-collapse:collapse; font-size:clamp(20px,1.2vw + 5px,22px);
 }
 table.dt th{
   background:var(--forest); color:#fff; padding:8px 11px;
-  text-align:left; font-weight:600; font-size:11px;
+  text-align:left; font-weight:600; font-size:clamp(20px,1.2vw + 5px,22px);
   white-space:normal; word-break:keep-all; line-height:1.4;
 }
 table.dt td{
@@ -88,7 +88,7 @@ table.dt .num{
 table.dt td:first-child,
 table.dt td.nowrap{ white-space:nowrap; }
 /* note row */
-tr.note-row td{ padding:3px 11px 8px; font-size:11px; color:var(--muted); font-style:italic; background:#fdfcf8 !important; border-bottom:1px solid var(--border); }
+tr.note-row td{ padding:3px 11px 8px; font-size:clamp(20px,1.2vw + 5px,22px); color:var(--muted); font-style:italic; background:#fdfcf8 !important; border-bottom:1px solid var(--border); }
 tr.note-row td span{ color:#7a5c00; }
 /* row highlight */
 tr.best td{ background:#faf3d8 !important; }
@@ -97,7 +97,7 @@ tr.excl td{ opacity:.38; }
 tr.warn td{ background:#fff8e1 !important; }
 
 /* BADGES */
-.b{ display:inline-block; padding:1px 5px; border-radius:2px; font-size:10px; font-weight:700; white-space:nowrap; }
+.b{ display:inline-block; padding:1px 5px; border-radius:2px; font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; white-space:nowrap; }
 .bl{ background:#ede8f5; color:#4a148c; border:1px solid #c5aee5; }
 .bi{ background:#e6f3ea; color:#1b5e20; border:1px solid #8bc89c; }
 .bo{ background:#e3edf8; color:#0d3a7a; border:1px solid #8ab0d8; }
@@ -119,74 +119,78 @@ tr.warn td{ background:#fff8e1 !important; }
 /* KPI */
 .kpi-row{ display:flex; gap:9px; margin-bottom:16px; flex-wrap:wrap; }
 .kpi{ flex:1; min-width:105px; background:var(--bg-card); border:1px solid var(--border); border-radius:3px; padding:11px 13px; text-align:center; }
-.kpi .kv{ font-family:"Inter",monospace; font-size:22px; font-weight:700; color:var(--gold); line-height:1.1; }
-.kpi .ku{ font-size:10px; color:var(--forest); font-weight:600; }
-.kpi .kl{ font-size:10px; color:var(--muted); margin-top:2px; }
+.kpi .kv{ font-family:"Inter",monospace; font-size:clamp(20px,1.2vw + 5px,24px); font-weight:700; color:var(--gold); line-height:1.1; }
+.kpi .ku{ font-size:clamp(20px,1.2vw + 5px,22px); color:var(--forest); font-weight:600; }
+.kpi .kl{ font-size:clamp(20px,1.2vw + 5px,22px); color:var(--muted); margin-top:2px; }
 .kpi.ks .kv{ color:var(--down); }
 .kpi.kg .kv{ color:var(--green); }
 
 /* COMP BAR */
-.comp-line{ display:flex; align-items:center; gap:8px; padding:7px 0; border-bottom:1px solid var(--border); font-size:12px; flex-wrap:nowrap; }
+.comp-line{ display:flex; align-items:center; gap:8px; padding:7px 0; border-bottom:1px solid var(--border); font-size:clamp(20px,1.2vw + 5px,22px); flex-wrap:nowrap; }
 .comp-line:last-child{ border-bottom:none; }
-.cl{ min-width:160px; flex:0 1 200px; color:#555; font-size:11px; line-height:1.4; word-break:break-word; }
-.cv{ font-family:"Inter",monospace; font-weight:700; flex:0 0 auto; text-align:right; font-size:11.5px; white-space:nowrap; }
+.cl{ min-width:160px; flex:0 1 200px; color:#555; font-size:clamp(20px,1.2vw + 5px,22px); line-height:1.4; word-break:break-word; }
+.cv{ font-family:"Inter",monospace; font-weight:700; flex:0 0 auto; text-align:right; font-size:clamp(20px,1.2vw + 5px,22px); white-space:nowrap; }
 .cb{ flex:1; min-width:40px; }
 .cbg{ height:8px; background:var(--border); border-radius:8px; position:relative; }
 .cf{ height:100%; border-radius:8px; background:var(--green); }
 .cm{ position:absolute; top:-4px; width:3px; height:16px; background:var(--down); border-radius:2px; }
-.cd{ font-size:10.5px; flex:0 0 auto; text-align:right; font-weight:700; white-space:nowrap; }
+.cd{ font-size:clamp(20px,1.2vw + 5px,22px); flex:0 0 auto; text-align:right; font-weight:700; white-space:nowrap; }
 .dpos{ color:var(--down); }
 .dneg{ color:var(--green); }
 
 /* FACTORS */
 .factors{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-.factor{ padding:8px 12px; font-size:11.5px; border-radius:0 3px 3px 0; word-break:break-word; overflow-wrap:break-word; }
+.factor{ padding:8px 12px; font-size:clamp(20px,1.2vw + 5px,22px); border-radius:0 3px 3px 0; word-break:break-word; overflow-wrap:break-word; }
 .fp{ background:#eef5ea; border-left:3px solid var(--green); }
 .fm{ background:var(--cream); border-left:3px solid var(--gold); }
-.ft{ font-weight:700; margin-bottom:1px; font-size:12px; }
+.ft{ font-weight:700; margin-bottom:1px; font-size:clamp(20px,1.2vw + 5px,22px); }
 
 /* INSIGHT BOX */
 .insight{ background:#f5f0e0; border:1px solid #d4b84a; border-radius:3px; padding:12px 15px; margin:14px 0; }
-.insight .it{ font-size:12px; font-weight:700; color:#7a5c00; margin-bottom:8px; }
+.insight .it{ font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; color:#7a5c00; margin-bottom:8px; }
 .ig{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
 .ig-item{ background:rgba(255,255,255,.6); padding:8px 11px; border-radius:3px; border:1px solid #e8d98c; }
-.ig-item .iv{ font-family:"Inter",monospace; font-size:17px; font-weight:700; color:var(--forest); }
-.ig-item .il{ font-size:10.5px; color:#666; }
+.ig-item .iv{ font-family:"Inter",monospace; font-size:clamp(20px,1.2vw + 5px,23px); font-weight:700; color:var(--forest); }
+.ig-item .il{ font-size:clamp(20px,1.2vw + 5px,22px); color:#666; }
 
 /* SPECIAL CASE BOX */
 .special-case{ background:#e8f5e9; border:1px solid #81c784; border-radius:3px; padding:13px 15px; margin:14px 0; }
-.sc-title{ font-size:12.5px; font-weight:700; color:#1b5e20; margin-bottom:10px; }
+.sc-title{ font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; color:#1b5e20; margin-bottom:10px; }
 .sc-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
 .sc-item{ background:rgba(255,255,255,.7); padding:9px 11px; border-radius:3px; border:1px solid #a5d6a7; }
-.sc-item .sv{ font-family:"Inter",monospace; font-size:16px; font-weight:700; color:#1b5e20; }
-.sc-item .sl{ font-size:10.5px; color:#444; }
-.sc-arrow{ display:flex; align-items:center; justify-content:center; font-size:18px; color:#4B872F; }
+.sc-item .sv{ font-family:"Inter",monospace; font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; color:#1b5e20; }
+.sc-item .sl{ font-size:clamp(20px,1.2vw + 5px,22px); color:#444; }
+.sc-arrow{ display:flex; align-items:center; justify-content:center; font-size:clamp(20px,1.2vw + 5px,24px); color:#4B872F; }
 
 /* VERDICT */
 .verdict{ background:#eef5ea; border:1px solid #81c784; border-radius:3px; padding:18px 20px; margin-top:10px; }
-.verdict h3{ font-size:13px; font-weight:700; color:var(--forest); margin-bottom:11px; }
+.verdict h3{ font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; color:var(--forest); margin-bottom:11px; }
 .vd-split{ display:flex; gap:24px; flex-wrap:wrap; margin-bottom:12px; align-items:flex-start; }
-.vp{ font-family:"Inter",monospace; font-size:26px; font-weight:800; color:#1b5e20; }
-.vps{ font-size:11px; color:#555; margin-top:2px; }
+.vp{ font-family:"Inter",monospace; font-size:clamp(24px,1.2vw + 9px,32px); font-weight:800; color:#1b5e20; }
+.vps{ font-size:clamp(20px,1.2vw + 5px,22px); color:#555; margin-top:2px; }
 .vrec{ border-left:3px solid var(--forest); padding-left:16px; }
-.vrl{ font-size:11.5px; font-weight:700; color:var(--forest); margin-bottom:2px; }
-.vrp{ font-family:"Inter",monospace; font-size:20px; font-weight:800; color:var(--forest); }
+.vrl{ font-size:clamp(20px,1.2vw + 5px,22px); font-weight:700; color:var(--forest); margin-bottom:2px; }
+.vrp{ font-family:"Inter",monospace; font-size:clamp(20px,1.2vw + 5px,22px); font-weight:800; color:var(--forest); }
 .verdict ul{ list-style:none; padding:0; }
-.verdict li{ font-size:12px; padding:3px 0 3px 15px; position:relative; }
+.verdict li{ font-size:clamp(20px,1.2vw + 5px,22px); padding:3px 0 3px 15px; position:relative; }
 .verdict li::before{ content:"▸"; position:absolute; left:0; color:var(--green); }
 
 /* INFO/WARN */
-.info-box{ background:#eef5ea; border-left:3px solid var(--green); padding:10px 13px; margin-top:12px; font-size:12px; color:#2a4a1e; border-radius:0 3px 3px 0; }
-.warn-box{ background:var(--cream); border-left:3px solid var(--gold); padding:10px 13px; margin-top:10px; font-size:11.5px; color:#6b5000; border-radius:0 3px 3px 0; }
+.info-box{ background:#eef5ea; border-left:3px solid var(--green); padding:10px 13px; margin-top:12px; font-size:clamp(20px,1.2vw + 5px,22px); color:#2a4a1e; border-radius:0 3px 3px 0; }
+.warn-box{ background:var(--cream); border-left:3px solid var(--gold); padding:10px 13px; margin-top:10px; font-size:clamp(20px,1.2vw + 5px,22px); color:#6b5000; border-radius:0 3px 3px 0; }
 .alert-box{ background:#fff8e1; border:1px solid var(--gold); border-radius:3px; padding:12px 15px; margin-top:12px; }
-.alert-box .alt{ font-weight:700; color:#8b6914; margin-bottom:8px; font-size:12px; }
+.alert-box .alt{ font-weight:700; color:#8b6914; margin-bottom:8px; font-size:clamp(20px,1.2vw + 5px,22px); }
 .alert-box ul{ list-style:none; padding:0; }
-.alert-box li{ font-size:11.5px; padding:4px 0; border-bottom:1px solid #f0e5b8; }
+.alert-box li{ font-size:clamp(20px,1.2vw + 5px,22px); padding:4px 0; border-bottom:1px solid #f0e5b8; }
 .alert-box li:last-child{ border-bottom:none; }
 
 /* FOOTER */
-.footer{ background:var(--forest); color:rgba(255,255,255,.7); padding:14px 36px; font-size:10.5px; line-height:1.8; }
+.footer{ background:var(--forest); color:rgba(255,255,255,.7); padding:14px 36px; font-size:clamp(20px,1.2vw + 5px,22px); line-height:1.8; }
 .footer strong{ color:#fff; }
+/* __FONTFIX_SAFETY__ */
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+img,svg{max-width:100%;height:auto}
+*{overflow-wrap:break-word;word-break:break-word}
 </style>
 </head>
 <body>
@@ -270,17 +274,17 @@ tr.warn td{ background:#fff8e1 !important; }
           <td>內海墘段特工區小段 41-5 地號</td>
           <td><span class="b bl">純土地</span></td>
           <td>非都市<br>工業區（丁種）</td>
-          <td class="num">1,059<br><span style="font-size:10px;color:#888;">丁建 852<br>道路 207</span></td>
+          <td class="num">1,059<br><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">丁建 852<br>道路 207</span></td>
           <td class="num">—</td><td>N/A</td>
           <td class="num"><strong>22,500</strong></td>
-          <td class="num plo"><strong>21.25</strong><br><span style="font-size:10px;color:#C0533A;font-weight:600;">混合均價↑</span></td>
+          <td class="num plo"><strong>21.25</strong><br><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#C0533A;font-weight:600;">混合均價↑</span></td>
           <td><span class="b bk">⭐ 同地段</span></td>
         </tr>
       </tbody>
     </table>
     </div>
 
-    <div style="background:#fff3e0;border-left:3px solid #e8a848;padding:10px 14px;margin-top:12px;font-size:12px;color:#7a4500;border-radius:0 3px 3px 0;">
+    <div style="background:#fff3e0;border-left:3px solid #e8a848;padding:10px 14px;margin-top:12px;font-size:clamp(20px,1.2vw + 5px,22px);color:#7a4500;border-radius:0 3px 3px 0;">
       <strong>⚠️ 注意：此筆登記面積 1,059 坪 = 丁種建築用地 852 坪 ＋ 道路用地 207 坪（混合地目）</strong><br>
       成交單價 21.25 萬/坪 為兩種地目的<strong>加權均價</strong>，道路用地單價低於丁建，實際丁建有效單價<strong>高於 21.25 萬/坪</strong>，本筆僅作底部錨點參考，不可直接比較。
     </div>
@@ -327,7 +331,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">1,083</td><td class="num">847</td><td class="ahi nowrap">40年</td>
           <td class="num">23,500</td><td class="num plo">21.71</td>
           <td><span class="b bo">辦公用</span></td>
-          <td style="font-size:10.5px;color:#666;">土地22,950萬<br>建物550萬</td>
+          <td style="font-size:clamp(20px,1.2vw + 5px,22px);color:#666;">土地22,950萬<br>建物550萬</td>
         </tr>
         <tr class="best">
           <td><strong>113年6月</strong></td><td><strong>民生路 115 號</strong></td><td><span class="b bi">房地</span></td>
@@ -335,14 +339,14 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num"><strong>1,053</strong></td><td class="num"><strong>597</strong></td><td class="ami nowrap"><strong>22年</strong></td>
           <td class="num"><strong>36,000</strong></td><td class="num phi"><strong>34.18</strong></td>
           <td><span class="b bi">工業用 ✓</span></td>
-          <td><span class="bs b">★最佳可比</span><br><span style="font-size:10px;color:#888;">其他增建</span></td>
+          <td><span class="bs b">★最佳可比</span><br><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">其他增建</span></td>
         </tr>
         <tr class="same">
           <td>113年11月</td><td>內海墘段特工區小段 41-5</td><td><span class="b bl">純土地</span></td>
           <td>非都市<br>工業區（丁種）</td>
           <td class="num">1,059</td><td class="num">—</td><td>—</td>
           <td class="num">22,500</td><td class="num plo">21.25</td><td>—</td>
-          <td><span class="b bk">⭐同地段</span><br><span style="font-size:10px;color:var(--forest);font-weight:700;">丁建852+道路207<br>均價21.25萬（含道路）</span></td>
+          <td><span class="b bk">⭐同地段</span><br><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--forest);font-weight:700;">丁建852+道路207<br>均價21.25萬（含道路）</span></td>
         </tr>
         <tr class="excl">
           <td>113年11月</td><td>國際路一段 66 號</td><td><span class="b bx">房地</span></td>
@@ -350,7 +354,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">2,882</td><td class="num">8,178</td><td class="alo nowrap">1年</td>
           <td class="num">258,889</td><td class="num">89.82</td>
           <td><span class="b bx">工業用</span></td>
-          <td><span class="b bx">❌排除</span><br><span style="font-size:10px;color:#888;">整棟倉儲物流<br>航空城特殊</span></td>
+          <td><span class="b bx">❌排除</span><br><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">整棟倉儲物流<br>航空城特殊</span></td>
         </tr>
       </tbody>
     </table>
@@ -360,7 +364,7 @@ tr.warn td{ background:#fff8e1 !important; }
 
     <div class="warn-box">大園區 114–115 年無千坪以上工業地新成交，以下 112–113 年數據為近三年完整行情基礎。</div>
 
-    <div style="font-size:12px;font-weight:700;color:var(--forest);margin:16px 0 8px;">
+    <div style="font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--forest);margin:16px 0 8px;">
       大園區工業廠房　逐年均價走勢
     </div>
     <div class="tbl-wrap">
@@ -386,7 +390,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="nowrap"><strong>民 114 年</strong></td><td class="num">—</td>
           <td class="num" style="color:var(--muted);">（無新案）</td>
           <td class="num">—</td><td class="num">—</td>
-          <td style="color:var(--muted);font-size:11px;">大園區近兩年無1,000坪以上新成交，以鄰區114年行情推估</td>
+          <td style="color:var(--muted);font-size:clamp(20px,1.2vw + 5px,22px);">大園區近兩年無1,000坪以上新成交，以鄰區114年行情推估</td>
           <td class="nowrap" style="color:var(--muted);">待更新</td>
         </tr>
       </tbody>
@@ -414,7 +418,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">977</td><td class="num">1,396</td><td class="ahi nowrap">29年</td>
           <td class="num">29,000</td><td class="num pmi">29.68</td>
           <td><span class="b bo">辦公用</span></td>
-          <td><span style="font-size:10px;color:#888;">其他增建</span></td>
+          <td><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">其他增建</span></td>
         </tr>
         <tr>
           <td>112年12月</td><td class="nowrap">觀音</td><td>工業六路 2 號</td>
@@ -429,7 +433,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">1,512</td><td class="num">1,683</td><td class="ami nowrap">24年</td>
           <td class="num">37,000</td><td class="num pmi">24.46</td>
           <td><span class="b bo">辦公用</span></td>
-          <td><span style="font-size:10px;color:#888;">鍋爐室增建<br>頂樓增建</span></td>
+          <td><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">鍋爐室增建<br>頂樓增建</span></td>
         </tr>
         <tr>
           <td>113年7月</td><td class="nowrap">觀音</td><td>環西路 99 號</td>
@@ -444,7 +448,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">2,705</td><td class="num">583</td><td class="ahi nowrap">36年</td>
           <td class="num">65,500</td><td class="num pmi">24.21</td>
           <td><span class="b bi">工業用 ✓</span></td>
-          <td><span style="font-size:10px;color:#888;">其他增建</span></td>
+          <td><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">其他增建</span></td>
         </tr>
         <tr class="best">
           <td><strong>114年5月</strong></td><td class="nowrap">觀音</td><td>榮工南路 8 號</td>
@@ -452,7 +456,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">4,634</td><td class="num">1,707</td><td class="ahi nowrap">29年</td>
           <td class="num">120,476</td><td class="num pmi"><strong>26.00</strong></td>
           <td><span class="b bi">工業用 ✓</span></td>
-          <td><span style="font-size:10px;color:#888;">5建號同門牌<br>土地113,151萬<br>建物7,325萬</span></td>
+          <td><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">5建號同門牌<br>土地113,151萬<br>建物7,325萬</span></td>
         </tr>
         <tr class="best">
           <td><strong>114年7月</strong></td><td class="nowrap">觀音</td><td>大同一路 11 號</td>
@@ -460,7 +464,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">1,512</td><td class="num">478</td><td class="alo nowrap">3年</td>
           <td class="num">40,500</td><td class="num pmi"><strong>26.78</strong></td>
           <td><span class="b bi">工業用 ✓</span></td>
-          <td><span style="font-size:10px;color:#888;">土地37,337萬<br>建物3,163萬</span></td>
+          <td><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">土地37,337萬<br>建物3,163萬</span></td>
         </tr>
         <tr>
           <td>114年11月</td><td class="nowrap">觀音</td><td>工業一路 10 號</td>
@@ -468,12 +472,12 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="num">1,357</td><td class="num">91</td><td class="ami nowrap">23年</td>
           <td class="num">28,195</td><td class="num plo">20.77</td>
           <td><span class="b bi">工業用 ✓</span></td>
-          <td><span style="font-size:10px;color:#888;">含4個建號<br>詳見實登</span></td>
+          <td><span style="font-size:clamp(20px,1.2vw + 5px,22px);color:#888;">含4個建號<br>詳見實登</span></td>
         </tr>
       </tbody>
     </table>
     </div>
-    <div style="font-size:12px;font-weight:700;color:var(--forest);margin:16px 0 8px;">
+    <div style="font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--forest);margin:16px 0 8px;">
       觀音區工業廠房　逐年均價走勢（鄰區最新錨點）
     </div>
     <div class="tbl-wrap">
@@ -496,7 +500,7 @@ tr.warn td{ background:#fff8e1 !important; }
           <td class="nowrap" style="color:var(--muted);">→ 持平</td>
         </tr>
         <tr style="background:#eef5ea !important;">
-          <td class="nowrap"><strong>民 114 年</strong></td><td class="num">2 <span style="font-size:10px;color:var(--muted);">（主要）</span></td>
+          <td class="nowrap"><strong>民 114 年</strong></td><td class="num">2 <span style="font-size:clamp(20px,1.2vw + 5px,22px);color:var(--muted);">（主要）</span></td>
           <td class="num" style="color:var(--forest);font-weight:800;">26.39</td>
           <td class="num">26.00</td><td class="num">26.78</td>
           <td><strong>榮工南路8號</strong>（工業，26.00，4,634坪）、<strong>大同一路11號</strong>（工業，26.78，1,512坪，屋齡3年）</td>
@@ -559,7 +563,7 @@ tr.warn td{ background:#fff8e1 !important; }
 <div class="sec">
   <div class="sec-hd"><h2>四、行情分析與物件評估</h2></div>
   <div class="sec-bd">
-    <div style="font-size:13px;font-weight:700;color:var(--forest);margin:0 0 9px;">物件特性</div>
+    <div style="font-size:clamp(20px,1.2vw + 5px,22px);font-weight:700;color:var(--forest);margin:0 0 9px;">物件特性</div>
     <div class="factors">
       <div class="factor fp"><div class="ft">大面寬 80 米</div>板車可直達，物流效率高，北桃園稀有。</div>
       <div class="factor fp"><div class="ft">方正地形 1,992 坪</div>整體可規劃，大坪數稀有，適合設廠或整體開發。</div>
